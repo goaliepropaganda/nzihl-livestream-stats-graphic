@@ -3,7 +3,7 @@ import { Resvg } from "@resvg/resvg-js";
 import { Jimp } from "jimp";
 import { readFile, writeFile } from "node:fs/promises";
 import { pathToFileURL } from "node:url";
-import { DATA_FILE, IMAGE_FILE, OUTPUT_DIR, REQUEST_HEADERS } from "./config.js";
+import { OUTPUT_DIR, REQUEST_HEADERS, WOMENS_DATA_FILE, WOMENS_IMAGE_FILE } from "./config.js";
 import { clampText, ensureDir, escapeXml } from "./utils.js";
 
 const WIDTH = 1920;
@@ -44,10 +44,9 @@ function getLayout(playerCount) {
   const leftEdge = PANEL.x + 24;
   const rightEdge = PANEL.x + PANEL.w - 24;
   const topStripHeight = 130;
-  const redBarHeight = 0;
   const colHeaderHeight = 56;
   const footerHeight = 48;
-  const rowsTop = PANEL.y + topStripHeight + redBarHeight + colHeaderHeight;
+  const rowsTop = PANEL.y + topStripHeight + colHeaderHeight;
   const rowsBottom = PANEL.y + PANEL.h - footerHeight;
   const rowHeight = Math.floor((rowsBottom - rowsTop) / Math.max(1, playerCount));
 
@@ -63,11 +62,9 @@ function getLayout(playerCount) {
     leftEdge,
     rightEdge,
     topStripHeight,
-    redBarHeight,
     colHeaderHeight,
     footerHeight,
     rowsTop,
-    rowsBottom,
     rowHeight,
     posWidth,
     photoWidth,
@@ -101,7 +98,7 @@ function buildSvg(payload) {
   svg += `<rect x=\"${PANEL.x + 4}\" y=\"${PANEL.y + 10}\" width=\"${PANEL.w}\" height=\"${PANEL.h}\" rx=\"${PANEL.r}\" ry=\"${PANEL.r}\" fill=\"#000000\" filter=\"url(#panelShadow)\"/>`;
   svg += `<rect x=\"${PANEL.x}\" y=\"${PANEL.y}\" width=\"${PANEL.w}\" height=\"${PANEL.h}\" rx=\"${PANEL.r}\" ry=\"${PANEL.r}\" fill=\"url(#panelGrad)\"/>`;
 
-  svg += `<text x=\"${PANEL.x + PANEL.w / 2}\" y=\"${topMidY + 12}\" fill=\"${COLORS.fg}\" text-anchor=\"middle\" font-size=\"40\" font-family=\"Segoe UI, Tahoma, sans-serif\" font-weight=\"700\">NZIHL SCORING LEADERS</text>`;
+  svg += `<text x=\"${PANEL.x + PANEL.w / 2}\" y=\"${topMidY + 12}\" fill=\"${COLORS.fg}\" text-anchor=\"middle\" font-size=\"40\" font-family=\"Segoe UI, Tahoma, sans-serif\" font-weight=\"700\">NZWIHL SCORING LEADERS</text>`;
 
   svg += `<rect x=\"${PANEL.x}\" y=\"${colHeaderY}\" width=\"${PANEL.w}\" height=\"${layout.colHeaderHeight}\" fill=\"#1C1E24\"/>`;
   svg += `<line x1=\"${PANEL.x}\" y1=\"${colHeaderY + layout.colHeaderHeight}\" x2=\"${PANEL.x + PANEL.w}\" y2=\"${colHeaderY + layout.colHeaderHeight}\" stroke=\"${COLORS.grid}\" stroke-width=\"1\"/>`;
@@ -193,7 +190,6 @@ async function buildPlayerPhotoComposite(imageUrl, size) {
     const cropY = Math.floor((resizedHeight - size) / 2);
     image.crop({ x: cropX, y: cropY, w: size, h: size });
 
-    // Apply a circular alpha mask so headshots match the original design.
     const center = (size - 1) / 2;
     const radius = size / 2;
 
@@ -211,7 +207,7 @@ async function buildPlayerPhotoComposite(imageUrl, size) {
   }
 }
 
-export async function renderImage(payload) {
+export async function renderWomensImage(payload) {
   await ensureDir(OUTPUT_DIR);
   const layout = getLayout(payload.players.length);
 
@@ -244,20 +240,20 @@ export async function renderImage(payload) {
   }
 
   const pngBuffer = await canvas.getBuffer("image/png");
-  await writeFile(IMAGE_FILE, pngBuffer);
+  await writeFile(WOMENS_IMAGE_FILE, pngBuffer);
 }
 
-export async function renderFromFile() {
-  const raw = await readFile(DATA_FILE, "utf8");
+export async function renderWomensFromFile() {
+  const raw = await readFile(WOMENS_DATA_FILE, "utf8");
   const payload = JSON.parse(raw);
-  await renderImage(payload);
+  await renderWomensImage(payload);
   return payload;
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
-  renderFromFile()
+  renderWomensFromFile()
     .then((payload) => {
-      console.log(`Rendered image for ${payload.players.length} players to ${IMAGE_FILE}`);
+      console.log(`Rendered image for ${payload.players.length} players to ${WOMENS_IMAGE_FILE}`);
     })
     .catch((error) => {
       console.error(error);

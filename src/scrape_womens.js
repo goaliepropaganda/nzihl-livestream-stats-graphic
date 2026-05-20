@@ -2,7 +2,13 @@ import axios from "axios";
 import * as cheerio from "cheerio";
 import { writeFile } from "node:fs/promises";
 import { pathToFileURL } from "node:url";
-import { BASE_URL, DATA_FILE, OUTPUT_DIR, REQUEST_HEADERS, STATS_URL } from "./config.js";
+import {
+  OUTPUT_DIR,
+  REQUEST_HEADERS,
+  WOMENS_BASE_URL,
+  WOMENS_DATA_FILE,
+  WOMENS_STATS_URL
+} from "./config.js";
 import { ensureDir, normalizeHeader } from "./utils.js";
 
 const REQUIRED_COLUMNS = ["PLAYER", "POS", "TEAM", "GP", "G", "A", "PTS", "P/G", "+/-"];
@@ -24,7 +30,7 @@ function parseBackgroundImageUrl(style) {
     return null;
   }
 
-  return new URL(rawUrl, BASE_URL).toString();
+  return new URL(rawUrl, WOMENS_BASE_URL).toString();
 }
 
 function getPlayerIdFromUrl(profileUrl) {
@@ -101,7 +107,7 @@ function findScoringTable($) {
     }
   }
 
-  throw new Error("Could not find the scoring leaders table with required columns.");
+  throw new Error("Could not find the NZWIHL scoring leaders table with required columns.");
 }
 
 function getCellText(cells, index) {
@@ -142,8 +148,8 @@ async function fetchProfileDetails(profileUrl) {
   };
 }
 
-export async function scrapeTop10() {
-  const { data } = await axios.get(STATS_URL, {
+export async function scrapeWomensTop10() {
+  const { data } = await axios.get(WOMENS_STATS_URL, {
     headers: REQUEST_HEADERS,
     timeout: 20000
   });
@@ -176,7 +182,7 @@ export async function scrapeTop10() {
     }
 
     const href = playerAnchor.attr("href");
-    const profileUrl = href ? new URL(href, BASE_URL).toString() : null;
+    const profileUrl = href ? new URL(href, WOMENS_BASE_URL).toString() : null;
 
     rows.push({
       rank,
@@ -215,21 +221,21 @@ export async function scrapeTop10() {
   }
 
   const payload = {
-    sourceUrl: STATS_URL,
+    sourceUrl: WOMENS_STATS_URL,
     generatedAt: new Date().toISOString(),
     players: top10
   };
 
   await ensureDir(OUTPUT_DIR);
-  await writeFile(DATA_FILE, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
+  await writeFile(WOMENS_DATA_FILE, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
 
   return payload;
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
-  scrapeTop10()
+  scrapeWomensTop10()
     .then((payload) => {
-      console.log(`Saved ${payload.players.length} players to ${DATA_FILE}`);
+      console.log(`Saved ${payload.players.length} players to ${WOMENS_DATA_FILE}`);
     })
     .catch((error) => {
       console.error(error);

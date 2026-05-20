@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>NZIHL Scoring Leaders</title>
+  <title>NZWIHL Scoring Leaders</title>
   <style>
     :root { color-scheme: only light; }
     body {
@@ -11,9 +11,9 @@
       font-family: 'Segoe UI', Tahoma, sans-serif;
       color: #e6edf3;
       background:
-        radial-gradient(1200px 600px at 85% -20%, rgba(50, 120, 170, 0.35), transparent 70%),
-        radial-gradient(900px 500px at 0% 100%, rgba(10, 60, 110, 0.35), transparent 70%),
-        #031525;
+        radial-gradient(1200px 600px at 85% -20%, rgba(194, 62, 92, 0.30), transparent 70%),
+        radial-gradient(900px 500px at 0% 100%, rgba(38, 56, 133, 0.30), transparent 70%),
+        #120a1f;
       min-height: 100vh;
       display: grid;
       place-items: center;
@@ -23,7 +23,7 @@
     .wrap { width: min(100%, 1600px); }
     .header { margin-bottom: 18px; }
     h1 { margin: 0 0 8px; font-size: clamp(1.5rem, 2.6vw, 2.2rem); }
-    .meta { color: #b5c7d8; }
+    .meta { color: #d9c7e8; }
     .card {
       border-radius: 18px;
       background: rgba(255, 255, 255, 0.04);
@@ -33,24 +33,23 @@
     }
     img { width: 100%; height: auto; display: block; border-radius: 12px; }
     .links { margin-top: 14px; display: flex; gap: 12px; flex-wrap: wrap; }
-    a { color: #9dd6ff; text-decoration: none; }
+    a { color: #f5b6ff; text-decoration: none; }
     a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
   <main class="wrap">
     <header class="header">
-      <h1>NZIHL Top 10 Scoring Leaders</h1>
-      <div class="meta">Last updated: 20 May 2026, 2:05 pm (Pacific/Auckland)</div>
+      <h1>NZWIHL Scoring Leaders</h1>
+      <div class="meta">Last updated: 20 May 2026, 2:06 pm (Pacific/Auckland)</div>
     </header>
     <section class="card">
-      <img src="./top10.png" alt="NZIHL top 10 scoring leaders graphic">
+      <img src="./womens_top10.png" alt="NZWIHL scoring leaders graphic">
       <div class="links">
-        <a href="./top10.png">Open PNG</a>
-        <a href="./top10.json">Open JSON</a>
-        <a href="./goalies/">View Goalie Leaders</a>
-        <a href="./womens/">View NZWIHL Scoring Leaders</a>
-        <a href="./womens-goalies/">View NZWIHL Goalie Leaders</a>
+        <a href="./womens_top10.png">Open PNG</a>
+        <a href="./womens_top10.json">Open JSON</a>
+        <a href="../womens-goalies/">View NZWIHL Goalie Leaders</a>
+        <a href="../">View NZIHL Scoring Leaders</a>
       </div>
     </section>
   </main>

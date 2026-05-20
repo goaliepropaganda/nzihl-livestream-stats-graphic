@@ -3,7 +3,12 @@ import { Resvg } from "@resvg/resvg-js";
 import { Jimp } from "jimp";
 import { readFile, writeFile } from "node:fs/promises";
 import { pathToFileURL } from "node:url";
-import { DATA_FILE, IMAGE_FILE, OUTPUT_DIR, REQUEST_HEADERS } from "./config.js";
+import {
+  OUTPUT_DIR,
+  REQUEST_HEADERS,
+  WOMENS_GOALIE_DATA_FILE,
+  WOMENS_GOALIE_IMAGE_FILE
+} from "./config.js";
 import { clampText, ensureDir, escapeXml } from "./utils.js";
 
 const WIDTH = 1920;
@@ -25,36 +30,31 @@ const COLORS = {
   grid: "#282C34",
   rowA: "#16181E",
   rowB: "#101216",
-  pill: "#3C404A",
-  pos: "#60C482",
-  neg: "#E86060"
+  pill: "#3C404A"
 };
 
 const METRIC_COLUMNS = [
-  { key: "position", label: "Pos" },
   { key: "gp", label: "GP" },
-  { key: "g", label: "G" },
-  { key: "a", label: "A" },
-  { key: "pts", label: "Pts" },
-  { key: "pPerGame", label: "P/G" },
-  { key: "plusMinus", label: "+/-" }
+  { key: "w", label: "W" },
+  { key: "l", label: "L" },
+  { key: "gaa", label: "GAA" },
+  { key: "svPct", label: "SV%" }
 ];
 
-function getLayout(playerCount) {
+function getLayout(goalieCount) {
   const leftEdge = PANEL.x + 24;
   const rightEdge = PANEL.x + PANEL.w - 24;
   const topStripHeight = 130;
-  const redBarHeight = 0;
   const colHeaderHeight = 56;
   const footerHeight = 48;
-  const rowsTop = PANEL.y + topStripHeight + redBarHeight + colHeaderHeight;
+  const rowsTop = PANEL.y + topStripHeight + colHeaderHeight;
   const rowsBottom = PANEL.y + PANEL.h - footerHeight;
-  const rowHeight = Math.floor((rowsBottom - rowsTop) / Math.max(1, playerCount));
+  const rowHeight = Math.floor((rowsBottom - rowsTop) / Math.max(1, goalieCount));
 
-  const posWidth = 64;
-  const photoWidth = 110;
-  const playerWidth = 340;
-  const teamWidth = 300;
+  const posWidth = 92;
+  const photoWidth = 120;
+  const playerWidth = 440;
+  const teamWidth = 340;
   const metricStartX = leftEdge + posWidth + photoWidth + playerWidth + teamWidth;
   const metricWidth = rightEdge - metricStartX;
   const metricColWidth = metricWidth / METRIC_COLUMNS.length;
@@ -63,11 +63,9 @@ function getLayout(playerCount) {
     leftEdge,
     rightEdge,
     topStripHeight,
-    redBarHeight,
     colHeaderHeight,
     footerHeight,
     rowsTop,
-    rowsBottom,
     rowHeight,
     posWidth,
     photoWidth,
@@ -80,7 +78,7 @@ function getLayout(playerCount) {
 }
 
 function buildSvg(payload) {
-  const layout = getLayout(payload.players.length);
+  const layout = getLayout(payload.goalies.length);
   const colHeaderY = PANEL.y + layout.topStripHeight;
   const topMidY = PANEL.y + Math.floor(layout.topStripHeight / 2);
 
@@ -101,41 +99,45 @@ function buildSvg(payload) {
   svg += `<rect x=\"${PANEL.x + 4}\" y=\"${PANEL.y + 10}\" width=\"${PANEL.w}\" height=\"${PANEL.h}\" rx=\"${PANEL.r}\" ry=\"${PANEL.r}\" fill=\"#000000\" filter=\"url(#panelShadow)\"/>`;
   svg += `<rect x=\"${PANEL.x}\" y=\"${PANEL.y}\" width=\"${PANEL.w}\" height=\"${PANEL.h}\" rx=\"${PANEL.r}\" ry=\"${PANEL.r}\" fill=\"url(#panelGrad)\"/>`;
 
-  svg += `<text x=\"${PANEL.x + PANEL.w / 2}\" y=\"${topMidY + 12}\" fill=\"${COLORS.fg}\" text-anchor=\"middle\" font-size=\"40\" font-family=\"Segoe UI, Tahoma, sans-serif\" font-weight=\"700\">NZIHL SCORING LEADERS</text>`;
+  svg += `<text x=\"${PANEL.x + PANEL.w / 2}\" y=\"${topMidY + 12}\" fill=\"${COLORS.fg}\" text-anchor=\"middle\" font-size=\"40\" font-family=\"Segoe UI, Tahoma, sans-serif\" font-weight=\"700\">NZWIHL GOALIE LEADERS</text>`;
 
   svg += `<rect x=\"${PANEL.x}\" y=\"${colHeaderY}\" width=\"${PANEL.w}\" height=\"${layout.colHeaderHeight}\" fill=\"#1C1E24\"/>`;
   svg += `<line x1=\"${PANEL.x}\" y1=\"${colHeaderY + layout.colHeaderHeight}\" x2=\"${PANEL.x + PANEL.w}\" y2=\"${colHeaderY + layout.colHeaderHeight}\" stroke=\"${COLORS.grid}\" stroke-width=\"1\"/>`;
 
   const headerMidY = colHeaderY + layout.colHeaderHeight / 2 + 8;
+  const positionCx = layout.leftEdge + layout.posWidth / 2;
   const playerStartX = layout.leftEdge + layout.posWidth + layout.photoWidth + 10;
   const teamStartX = playerStartX + layout.playerWidth;
-  svg += `<text x=\"${playerStartX}\" y=\"${headerMidY}\" fill=\"${COLORS.sub}\" font-size=\"22\" font-family=\"Segoe UI, Tahoma, sans-serif\" font-weight=\"700\">Player</text>`;
+
+  svg += `<text x=\"${positionCx}\" y=\"${headerMidY}\" text-anchor=\"middle\" fill=\"${COLORS.sub}\" font-size=\"22\" font-family=\"Segoe UI, Tahoma, sans-serif\" font-weight=\"700\">Position</text>`;
+  svg += `<text x=\"${playerStartX}\" y=\"${headerMidY}\" fill=\"${COLORS.sub}\" font-size=\"22\" font-family=\"Segoe UI, Tahoma, sans-serif\" font-weight=\"700\">Name</text>`;
   svg += `<text x=\"${teamStartX}\" y=\"${headerMidY}\" fill=\"${COLORS.sub}\" font-size=\"22\" font-family=\"Segoe UI, Tahoma, sans-serif\" font-weight=\"700\">Team</text>`;
 
   for (let i = 0; i < METRIC_COLUMNS.length; i += 1) {
     const column = METRIC_COLUMNS[i];
     const cx = layout.metricStartX + i * layout.metricColWidth + layout.metricColWidth / 2;
-    const color = column.key === "pts" ? COLORS.accent : COLORS.sub;
-    const size = column.key === "pts" ? 24 : 22;
+    const isSv = column.key === "svPct";
+    const color = isSv ? COLORS.accent : COLORS.sub;
+    const size = isSv ? 24 : 22;
     svg += `<text x=\"${cx}\" y=\"${headerMidY}\" text-anchor=\"middle\" fill=\"${color}\" font-size=\"${size}\" font-family=\"Segoe UI, Tahoma, sans-serif\" font-weight=\"700\">${escapeXml(column.label)}</text>`;
   }
 
-  for (let index = 0; index < payload.players.length; index += 1) {
-    const player = payload.players[index];
+  for (let index = 0; index < payload.goalies.length; index += 1) {
+    const goalie = payload.goalies[index];
     const rowY = layout.rowsTop + index * layout.rowHeight;
     const cy = rowY + layout.rowHeight / 2;
     const rowFill = index % 2 === 0 ? COLORS.rowA : COLORS.rowB;
 
     svg += `<rect x=\"${PANEL.x}\" y=\"${rowY}\" width=\"${PANEL.w}\" height=\"${layout.rowHeight}\" fill=\"${rowFill}\"/>`;
 
-    if (index < payload.players.length - 1) {
+    if (index < payload.goalies.length - 1) {
       svg += `<line x1=\"${layout.leftEdge}\" y1=\"${rowY + layout.rowHeight - 1}\" x2=\"${layout.rightEdge}\" y2=\"${rowY + layout.rowHeight - 1}\" stroke=\"${COLORS.grid}\" stroke-width=\"1\"/>`;
     }
 
     const pillCenterX = layout.leftEdge + layout.posWidth / 2;
     const pillR = 22;
     svg += `<rect x=\"${pillCenterX - pillR}\" y=\"${cy - pillR}\" width=\"${pillR * 2}\" height=\"${pillR * 2}\" rx=\"10\" ry=\"10\" fill=\"${COLORS.pill}\"/>`;
-    svg += `<text x=\"${pillCenterX}\" y=\"${cy + 9}\" text-anchor=\"middle\" fill=\"${COLORS.fg}\" font-size=\"28\" font-family=\"Segoe UI, Tahoma, sans-serif\" font-weight=\"700\">${index + 1}</text>`;
+    svg += `<text x=\"${pillCenterX}\" y=\"${cy + 9}\" text-anchor=\"middle\" fill=\"${COLORS.fg}\" font-size=\"28\" font-family=\"Segoe UI, Tahoma, sans-serif\" font-weight=\"700\">${goalie.rank}</text>`;
 
     const photoX = layout.leftEdge + layout.posWidth + (layout.photoWidth - layout.photoSize) / 2;
     const photoY = cy - layout.photoSize / 2;
@@ -143,24 +145,16 @@ function buildSvg(payload) {
 
     const nameX = layout.leftEdge + layout.posWidth + layout.photoWidth + 10;
     const teamX = nameX + layout.playerWidth;
-    svg += `<text x=\"${nameX}\" y=\"${cy + 10}\" fill=\"${COLORS.fg}\" font-size=\"34\" font-family=\"Segoe UI, Tahoma, sans-serif\" font-weight=\"700\">${escapeXml(clampText(String(player.name || ""), 24))}</text>`;
-    svg += `<text x=\"${teamX}\" y=\"${cy + 9}\" fill=\"${COLORS.sub}\" font-size=\"31\" font-family=\"Segoe UI, Tahoma, sans-serif\" font-weight=\"700\">${escapeXml(clampText(String(player.team || ""), 22))}</text>`;
+    svg += `<text x=\"${nameX}\" y=\"${cy + 10}\" fill=\"${COLORS.fg}\" font-size=\"34\" font-family=\"Segoe UI, Tahoma, sans-serif\" font-weight=\"700\">${escapeXml(clampText(String(goalie.name || ""), 24))}</text>`;
+    svg += `<text x=\"${teamX}\" y=\"${cy + 9}\" fill=\"${COLORS.sub}\" font-size=\"31\" font-family=\"Segoe UI, Tahoma, sans-serif\" font-weight=\"700\">${escapeXml(clampText(String(goalie.team || ""), 22))}</text>`;
 
     for (let i = 0; i < METRIC_COLUMNS.length; i += 1) {
       const column = METRIC_COLUMNS[i];
       const cx = layout.metricStartX + i * layout.metricColWidth + layout.metricColWidth / 2;
-      const raw = String(player[column.key] ?? "");
+      const raw = String(goalie[column.key] ?? "");
 
-      if (column.key === "plusMinus") {
-        const value = Number.parseInt(raw, 10);
-        const color = Number.isNaN(value) ? COLORS.sub : value > 0 ? COLORS.pos : value < 0 ? COLORS.neg : COLORS.dim;
-        const label = Number.isNaN(value) ? raw : value > 0 ? `+${value}` : String(value);
-        svg += `<text x=\"${cx}\" y=\"${cy + 11}\" text-anchor=\"middle\" fill=\"${color}\" font-size=\"32\" font-family=\"Segoe UI, Tahoma, sans-serif\" font-weight=\"700\">${escapeXml(label)}</text>`;
-        continue;
-      }
-
-      if (column.key === "pts") {
-        svg += `<text x=\"${cx}\" y=\"${cy + 14}\" text-anchor=\"middle\" fill=\"${COLORS.accent}\" font-size=\"44\" font-family=\"Segoe UI, Tahoma, sans-serif\" font-weight=\"700\">${escapeXml(raw)}</text>`;
+      if (column.key === "svPct") {
+        svg += `<text x=\"${cx}\" y=\"${cy + 14}\" text-anchor=\"middle\" fill=\"${COLORS.accent}\" font-size=\"40\" font-family=\"Segoe UI, Tahoma, sans-serif\" font-weight=\"700\">${escapeXml(raw)}</text>`;
         continue;
       }
 
@@ -168,7 +162,7 @@ function buildSvg(payload) {
     }
   }
 
-  svg += `<text x=\"${PANEL.x + PANEL.w / 2}\" y=\"${PANEL.y + PANEL.h - layout.footerHeight / 2 + 7}\" text-anchor=\"middle\" fill=\"${COLORS.dim}\" font-size=\"20\" font-family=\"Segoe UI, Tahoma, sans-serif\">Pos Position · GP Games Played · P/G Points Per Game · +/- Plus Minus</text>`;
+  svg += `<text x=\"${PANEL.x + PANEL.w / 2}\" y=\"${PANEL.y + PANEL.h - layout.footerHeight / 2 + 7}\" text-anchor=\"middle\" fill=\"${COLORS.dim}\" font-size=\"20\" font-family=\"Segoe UI, Tahoma, sans-serif\">Goalie stats from NZWIHL regular season (showGameType=2)</text>`;
 
   svg += "</svg>";
   return svg;
@@ -193,7 +187,6 @@ async function buildPlayerPhotoComposite(imageUrl, size) {
     const cropY = Math.floor((resizedHeight - size) / 2);
     image.crop({ x: cropX, y: cropY, w: size, h: size });
 
-    // Apply a circular alpha mask so headshots match the original design.
     const center = (size - 1) / 2;
     const radius = size / 2;
 
@@ -211,9 +204,9 @@ async function buildPlayerPhotoComposite(imageUrl, size) {
   }
 }
 
-export async function renderImage(payload) {
+export async function renderWomensGoalieImage(payload) {
   await ensureDir(OUTPUT_DIR);
-  const layout = getLayout(payload.players.length);
+  const layout = getLayout(payload.goalies.length);
 
   const baseSvg = Buffer.from(buildSvg(payload), "utf8");
   const resvg = new Resvg(baseSvg, {
@@ -225,13 +218,13 @@ export async function renderImage(payload) {
   const basePng = resvg.render().asPng();
   const canvas = await Jimp.read(Buffer.from(basePng));
 
-  for (let index = 0; index < payload.players.length; index += 1) {
-    const player = payload.players[index];
-    if (!player.imageUrl) {
+  for (let index = 0; index < payload.goalies.length; index += 1) {
+    const goalie = payload.goalies[index];
+    if (!goalie.imageUrl) {
       continue;
     }
 
-    const photo = await buildPlayerPhotoComposite(player.imageUrl, layout.photoSize);
+    const photo = await buildPlayerPhotoComposite(goalie.imageUrl, layout.photoSize);
     if (!photo) {
       continue;
     }
@@ -244,20 +237,20 @@ export async function renderImage(payload) {
   }
 
   const pngBuffer = await canvas.getBuffer("image/png");
-  await writeFile(IMAGE_FILE, pngBuffer);
+  await writeFile(WOMENS_GOALIE_IMAGE_FILE, pngBuffer);
 }
 
-export async function renderFromFile() {
-  const raw = await readFile(DATA_FILE, "utf8");
+export async function renderWomensGoalieFromFile() {
+  const raw = await readFile(WOMENS_GOALIE_DATA_FILE, "utf8");
   const payload = JSON.parse(raw);
-  await renderImage(payload);
+  await renderWomensGoalieImage(payload);
   return payload;
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
-  renderFromFile()
+  renderWomensGoalieFromFile()
     .then((payload) => {
-      console.log(`Rendered image for ${payload.players.length} players to ${IMAGE_FILE}`);
+      console.log(`Rendered image for ${payload.goalies.length} goalies to ${WOMENS_GOALIE_IMAGE_FILE}`);
     })
     .catch((error) => {
       console.error(error);

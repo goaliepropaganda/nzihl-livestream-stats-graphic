@@ -8,7 +8,13 @@
     "build": "node src/index.js",
     "build:live": "node src/index.js && node src/site.js",
     "scrape": "node src/scrape.js",
+    "scrape:goalies": "node src/scrape_goalies.js",
+    "scrape:womens": "node src/scrape_womens.js",
+    "scrape:womens:goalies": "node src/scrape_womens_goalies.js",
     "render": "node src/render.js",
+    "render:goalies": "node src/render_goalies.js",
+    "render:womens": "node src/render_womens.js",
+    "render:womens:goalies": "node src/render_womens_goalies.js",
     "site": "node src/site.js"
   },
   "dependencies": {
