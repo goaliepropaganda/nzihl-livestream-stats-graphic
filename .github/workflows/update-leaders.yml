@@ -1,4 +1,4 @@
-name: Update NZIHL Scoring Leaders
+name: Update Scoring Leaders
 
 on:
   schedule:
@@ -25,11 +25,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Generate latest top 10 graphic
+      - name: Generate graphics
         run: npm run build
 
       - name: Commit output files
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: update NZIHL top 10 scoring leaders graphic"
-          file_pattern: output/top10.json output/NZIHL_top10.png output/goalies.json output/NZIHL_goalies.png
+          commit_message: "chore: update scoring leaders graphics"
+          file_pattern: output/top10.json output/NZIHL_top10.png output/goalies.json output/NZIHL_goalies.png output/womens_top10.json output/womens_top10.png output/womens_goalies.json output/womens_goalies.png

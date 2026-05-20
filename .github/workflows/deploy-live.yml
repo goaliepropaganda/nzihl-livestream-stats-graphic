@@ -1,4 +1,4 @@
-name: Deploy Live NZIHL Leaders
+name: Deploy Live Leaders
 
 on:
   schedule:
