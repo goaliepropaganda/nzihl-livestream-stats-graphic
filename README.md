@@ -5,9 +5,9 @@ This project scrapes NZIHL skater and goalie leaderboards, follows each player p
 ## Included Output
 
 - `output/top10.json`: Structured player data (name, position, team, GP, G, A, Pts, p/G, +/- and profile image URL)
-- `output/top10.png`: Rendered leaderboard image with a transparent background and a 80px transparent border
+- `output/NZIHL_top10.png`: Rendered NZIHL skater leaderboard image
 - `output/goalies.json`: Structured goalie data (position, name, team, GP, W, L, GAA, SV% and profile image URL)
-- `output/goalies.png`: Rendered goalie leaderboard image
+- `output/NZIHL_goalies.png`: Rendered NZIHL goalie leaderboard image
 - `output/womens_top10.json`: Structured NZWIHL player data
 - `output/womens_top10.png`: Rendered NZWIHL player leaderboard image
 - `output/womens_goalies.json`: Structured NZWIHL goalie data
@@ -58,10 +58,10 @@ npm run build:live
 This writes:
 
 - `docs/index.html`
-- `docs/top10.png`
+- `docs/NZIHL_top10.png`
 - `docs/top10.json`
 - `docs/goalies/index.html`
-- `docs/goalies/goalies.png`
+- `docs/goalies/NZIHL_goalies.png`
 - `docs/goalies/goalies.json`
 - `docs/womens/index.html`
 - `docs/womens/womens_top10.png`

@@ -36,12 +36,18 @@ const METRIC_COLUMNS = [
   { key: "svPct", label: "SV%" }
 ];
 
+const HEADER_LOGO_PATH = "src/NZIHL-White-2000.png";
+const HEADER_LOGO_WIDTH = 110;
+const HEADER_LOGO_HEIGHT = 62;
+const HEADER_LOGO_GAP = 20;
+const HEADER_TITLE_VISUAL_WIDTH = 530;
+
 function getLayout(goalieCount) {
   const leftEdge = PANEL.x + 24;
   const rightEdge = PANEL.x + PANEL.w - 24;
   const topStripHeight = 130;
   const colHeaderHeight = 56;
-  const footerHeight = 48;
+  const footerHeight = 10;
   const rowsTop = PANEL.y + topStripHeight + colHeaderHeight;
   const rowsBottom = PANEL.y + PANEL.h - footerHeight;
   const rowHeight = Math.floor((rowsBottom - rowsTop) / Math.max(1, goalieCount));
@@ -94,7 +100,8 @@ function buildSvg(payload) {
   svg += `<rect x=\"${PANEL.x + 4}\" y=\"${PANEL.y + 10}\" width=\"${PANEL.w}\" height=\"${PANEL.h}\" rx=\"${PANEL.r}\" ry=\"${PANEL.r}\" fill=\"#000000\" filter=\"url(#panelShadow)\"/>`;
   svg += `<rect x=\"${PANEL.x}\" y=\"${PANEL.y}\" width=\"${PANEL.w}\" height=\"${PANEL.h}\" rx=\"${PANEL.r}\" ry=\"${PANEL.r}\" fill=\"url(#panelGrad)\"/>`;
 
-  svg += `<text x=\"${PANEL.x + PANEL.w / 2}\" y=\"${topMidY + 12}\" fill=\"${COLORS.fg}\" text-anchor=\"middle\" font-size=\"40\" font-family=\"Segoe UI, Tahoma, sans-serif\" font-weight=\"700\">NZIHL GOALIE LEADERS</text>`;
+  const titleCenterX = PANEL.x + PANEL.w / 2 + (HEADER_LOGO_WIDTH + HEADER_LOGO_GAP) / 2;
+  svg += `<text x=\"${titleCenterX}\" y=\"${topMidY + 12}\" fill=\"${COLORS.fg}\" text-anchor=\"middle\" font-size=\"40\" font-family=\"Segoe UI, Tahoma, sans-serif\" font-weight=\"700\">NZIHL GOALIE LEADERS</text>`;
 
   svg += `<rect x=\"${PANEL.x}\" y=\"${colHeaderY}\" width=\"${PANEL.w}\" height=\"${layout.colHeaderHeight}\" fill=\"#1C1E24\"/>`;
   svg += `<line x1=\"${PANEL.x}\" y1=\"${colHeaderY + layout.colHeaderHeight}\" x2=\"${PANEL.x + PANEL.w}\" y2=\"${colHeaderY + layout.colHeaderHeight}\" stroke=\"${COLORS.grid}\" stroke-width=\"1\"/>`;
@@ -157,8 +164,6 @@ function buildSvg(payload) {
     }
   }
 
-  svg += `<text x=\"${PANEL.x + PANEL.w / 2}\" y=\"${PANEL.y + PANEL.h - layout.footerHeight / 2 + 7}\" text-anchor=\"middle\" fill=\"${COLORS.dim}\" font-size=\"20\" font-family=\"Segoe UI, Tahoma, sans-serif\">Goalie stats from NZIHL regular season (showGameType=2)</text>`;
-
   svg += "</svg>";
   return svg;
 }
@@ -199,6 +204,16 @@ async function buildPlayerPhotoComposite(imageUrl, size) {
   }
 }
 
+async function buildHeaderLogoComposite() {
+  try {
+    const logo = await Jimp.read(HEADER_LOGO_PATH);
+    logo.contain({ w: HEADER_LOGO_WIDTH, h: HEADER_LOGO_HEIGHT });
+    return logo;
+  } catch {
+    return null;
+  }
+}
+
 export async function renderGoalieImage(payload) {
   await ensureDir(OUTPUT_DIR);
   const layout = getLayout(payload.goalies.length);
@@ -212,6 +227,14 @@ export async function renderGoalieImage(payload) {
   });
   const basePng = resvg.render().asPng();
   const canvas = await Jimp.read(Buffer.from(basePng));
+
+  const headerLogo = await buildHeaderLogoComposite();
+  if (headerLogo) {
+    const pairWidth = HEADER_LOGO_WIDTH + HEADER_LOGO_GAP + HEADER_TITLE_VISUAL_WIDTH;
+    const logoX = Math.round(PANEL.x + (PANEL.w - pairWidth) / 2);
+    const logoY = Math.round(PANEL.y + layout.topStripHeight / 2 - HEADER_LOGO_HEIGHT / 2);
+    canvas.composite(headerLogo, logoX, logoY);
+  }
 
   for (let index = 0; index < payload.goalies.length; index += 1) {
     const goalie = payload.goalies[index];

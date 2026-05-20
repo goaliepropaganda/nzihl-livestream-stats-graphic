@@ -12,11 +12,11 @@ import {
 
 const LIVE_DIR = "docs";
 const LIVE_JSON_FILE = `${LIVE_DIR}/top10.json`;
-const LIVE_IMAGE_FILE = `${LIVE_DIR}/top10.png`;
+const LIVE_IMAGE_FILE = `${LIVE_DIR}/NZIHL_top10.png`;
 const LIVE_INDEX_FILE = `${LIVE_DIR}/index.html`;
 const GOALIE_LIVE_DIR = `${LIVE_DIR}/goalies`;
 const GOALIE_LIVE_JSON_FILE = `${GOALIE_LIVE_DIR}/goalies.json`;
-const GOALIE_LIVE_IMAGE_FILE = `${GOALIE_LIVE_DIR}/goalies.png`;
+const GOALIE_LIVE_IMAGE_FILE = `${GOALIE_LIVE_DIR}/NZIHL_goalies.png`;
 const GOALIE_LIVE_INDEX_FILE = `${GOALIE_LIVE_DIR}/index.html`;
 const WOMENS_LIVE_DIR = `${LIVE_DIR}/womens`;
 const WOMENS_LIVE_JSON_FILE = `${WOMENS_LIVE_DIR}/womens_top10.json`;
@@ -82,9 +82,9 @@ function buildLiveHtml(payload) {
     `      <div class=\"meta\">Last updated: ${generated} (Pacific/Auckland)</div>`,
     "    </header>",
     "    <section class=\"card\">",
-    "      <img src=\"./top10.png\" alt=\"NZIHL top 10 scoring leaders graphic\">",
+    "      <img src=\"./NZIHL_top10.png\" alt=\"NZIHL top 10 scoring leaders graphic\">",
     "      <div class=\"links\">",
-    "        <a href=\"./top10.png\">Open PNG</a>",
+    "        <a href=\"./NZIHL_top10.png\">Open PNG</a>",
     "        <a href=\"./top10.json\">Open JSON</a>",
     "        <a href=\"./goalies/\">View Goalie Leaders</a>",
     "        <a href=\"./womens/\">View NZWIHL Scoring Leaders</a>",
@@ -151,9 +151,9 @@ function buildGoalieLiveHtml(payload) {
     `      <div class=\"meta\">Last updated: ${generated} (Pacific/Auckland)</div>`,
     "    </header>",
     "    <section class=\"card\">",
-    "      <img src=\"./goalies.png\" alt=\"NZIHL goalie leaders graphic\">",
+    "      <img src=\"./NZIHL_goalies.png\" alt=\"NZIHL goalie leaders graphic\">",
     "      <div class=\"links\">",
-    "        <a href=\"./goalies.png\">Open PNG</a>",
+    "        <a href=\"./NZIHL_goalies.png\">Open PNG</a>",
     "        <a href=\"./goalies.json\">Open JSON</a>",
     "        <a href=\"../\">View Scoring Leaders</a>",
     "        <a href=\"../womens/\">View NZWIHL Scoring Leaders</a>",

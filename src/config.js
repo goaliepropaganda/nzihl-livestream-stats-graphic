@@ -21,9 +21,9 @@ export const REQUEST_HEADERS = {
 
 export const OUTPUT_DIR = "output";
 export const DATA_FILE = `${OUTPUT_DIR}/top10.json`;
-export const IMAGE_FILE = `${OUTPUT_DIR}/top10.png`;
+export const IMAGE_FILE = `${OUTPUT_DIR}/NZIHL_top10.png`;
 export const GOALIE_DATA_FILE = `${OUTPUT_DIR}/goalies.json`;
-export const GOALIE_IMAGE_FILE = `${OUTPUT_DIR}/goalies.png`;
+export const GOALIE_IMAGE_FILE = `${OUTPUT_DIR}/NZIHL_goalies.png`;
 export const WOMENS_DATA_FILE = `${OUTPUT_DIR}/womens_top10.json`;
 export const WOMENS_IMAGE_FILE = `${OUTPUT_DIR}/womens_top10.png`;
 export const WOMENS_GOALIE_DATA_FILE = `${OUTPUT_DIR}/womens_goalies.json`;
