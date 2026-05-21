@@ -4,7 +4,7 @@ import { Jimp } from "jimp";
 import { readFile, writeFile } from "node:fs/promises";
 import { pathToFileURL } from "node:url";
 import { OUTPUT_DIR, REQUEST_HEADERS, WOMENS_DATA_FILE, WOMENS_IMAGE_FILE } from "./config.js";
-import { clampText, ensureDir, escapeXml } from "./utils.js";
+import { applyInvisibleRunMarker, clampText, ensureDir, escapeXml } from "./utils.js";
 
 const WIDTH = 1920;
 const HEIGHT = 1080;
@@ -264,6 +264,7 @@ export async function renderWomensImage(payload) {
     canvas.composite(photo, photoX, photoY);
   }
 
+  applyInvisibleRunMarker(canvas, payload.generatedAt);
   const pngBuffer = await canvas.getBuffer("image/png");
   await writeFile(WOMENS_IMAGE_FILE, pngBuffer);
 }

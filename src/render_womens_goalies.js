@@ -9,7 +9,7 @@ import {
   WOMENS_GOALIE_DATA_FILE,
   WOMENS_GOALIE_IMAGE_FILE
 } from "./config.js";
-import { clampText, ensureDir, escapeXml } from "./utils.js";
+import { applyInvisibleRunMarker, clampText, ensureDir, escapeXml } from "./utils.js";
 
 const WIDTH = 1920;
 const HEIGHT = 1080;
@@ -261,6 +261,7 @@ export async function renderWomensGoalieImage(payload) {
     canvas.composite(photo, photoX, photoY);
   }
 
+  applyInvisibleRunMarker(canvas, payload.generatedAt);
   const pngBuffer = await canvas.getBuffer("image/png");
   await writeFile(WOMENS_GOALIE_IMAGE_FILE, pngBuffer);
 }
