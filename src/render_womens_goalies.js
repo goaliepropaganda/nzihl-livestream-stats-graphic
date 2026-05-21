@@ -91,19 +91,7 @@ function buildSvg(payload) {
   let svg = "";
   svg += `<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"${WIDTH}\" height=\"${HEIGHT}\" viewBox=\"0 0 ${WIDTH} ${HEIGHT}\">`;
   svg += "<defs>";
-  svg += "<linearGradient id=\"panelGrad\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\">";
-  svg += "<stop offset=\"0%\" stop-color=\"#0C0E12\"/>";
-  svg += "<stop offset=\"100%\" stop-color=\"#040508\"/>";
-  svg += "</linearGradient>";
-  svg += "<filter id=\"panelShadow\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">";
-  svg += "<feGaussianBlur in=\"SourceAlpha\" stdDeviation=\"9\" result=\"blur\"/>";
-  svg += "<feOffset in=\"blur\" dx=\"4\" dy=\"10\" result=\"offset\"/>";
-  svg += "<feColorMatrix in=\"offset\" type=\"matrix\" values=\"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.55 0\"/>";
-  svg += "</filter>";
   svg += "</defs>";
-
-  svg += `<rect x=\"${PANEL.x + 4}\" y=\"${PANEL.y + 10}\" width=\"${PANEL.w}\" height=\"${PANEL.h}\" rx=\"${PANEL.r}\" ry=\"${PANEL.r}\" fill=\"#000000\" filter=\"url(#panelShadow)\"/>`;
-  svg += `<rect x=\"${PANEL.x}\" y=\"${PANEL.y}\" width=\"${PANEL.w}\" height=\"${PANEL.h}\" rx=\"${PANEL.r}\" ry=\"${PANEL.r}\" fill=\"url(#panelGrad)\"/>`;
 
   const titleCenterX = PANEL.x + PANEL.w / 2 + (HEADER_LOGO_WIDTH + HEADER_LOGO_GAP) / 2;
   svg += `<text x=\"${titleCenterX}\" y=\"${topMidY + 12}\" fill=\"${COLORS.fg}\" text-anchor=\"middle\" font-size=\"40\" font-family=\"Segoe UI, Tahoma, sans-serif\" font-weight=\"700\">NZWIHL GOALIE LEADERS</text>`;
