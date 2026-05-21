@@ -88,6 +88,8 @@ function buildSvg(payload) {
   svg += "<defs>";
   svg += "</defs>";
 
+  svg += `<rect x="${PANEL.x}" y="${PANEL.y}" width="${PANEL.w}" height="${PANEL.h}" rx="${PANEL.r}" ry="${PANEL.r}" fill="#0C0E12"/>`;
+
   const titleCenterX = PANEL.x + PANEL.w / 2 + (HEADER_LOGO_WIDTH + HEADER_LOGO_GAP) / 2;
   svg += `<text x=\"${titleCenterX}\" y=\"${topMidY + 12}\" fill=\"${COLORS.fg}\" text-anchor=\"middle\" font-size=\"40\" font-family=\"Segoe UI, Tahoma, sans-serif\" font-weight=\"700\">NZIHL GOALIE LEADERS</text>`;
 
