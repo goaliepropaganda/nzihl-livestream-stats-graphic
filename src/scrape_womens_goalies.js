@@ -14,9 +14,16 @@ import { ensureDir, normalizeHeader } from "./utils.js";
 const REQUIRED_COLUMNS = ["GOALIE", "TEAM", "GP", "W", "L", "GAA", "SV%"];
 
 function cleanTeamName(rawTeam) {
-  return String(rawTeam)
+  const cleaned = String(rawTeam)
     .replace(/[A-Z]{2,4}$/, "")
+    .replace(/\s+/g, " ")
     .trim();
+
+  if (/^canterbury red devils$/i.test(cleaned)) {
+    return "Red Devils";
+  }
+
+  return cleaned;
 }
 
 function toSentenceCaseIfLower(value) {

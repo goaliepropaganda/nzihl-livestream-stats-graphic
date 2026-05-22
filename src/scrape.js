@@ -8,9 +8,16 @@ import { ensureDir, normalizeHeader } from "./utils.js";
 const REQUIRED_COLUMNS = ["PLAYER", "POS", "TEAM", "GP", "G", "A", "PTS", "P/G", "+/-"];
 
 function cleanTeamName(rawTeam) {
-  return String(rawTeam)
+  const cleaned = String(rawTeam)
     .replace(/[A-Z]{2,4}$/, "")
+    .replace(/\s+/g, " ")
     .trim();
+
+  if (/^canterbury red devils$/i.test(cleaned)) {
+    return "Red Devils";
+  }
+
+  return cleaned;
 }
 
 function parseBackgroundImageUrl(style) {
