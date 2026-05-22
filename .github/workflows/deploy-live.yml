@@ -1,8 +1,8 @@
-name: Deploy Live Leaders
+name: Build and Deploy Leaders Site
 
 on:
   schedule:
-    - cron: "15 */12 * * *"
+    - cron: "0 */12 * * *"
   workflow_dispatch:
 
 permissions:

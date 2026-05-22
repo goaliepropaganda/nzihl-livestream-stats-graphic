@@ -72,13 +72,14 @@ This writes:
 
 ## Automated GitHub Workflow
 
-The workflow in `.github/workflows/update-leaders.yml` runs every 12 hours and can also be started manually.
+The workflow in `.github/workflows/deploy-live.yml` runs every 12 hours and can also be started manually.
 
 It does the following:
 
 1. Installs dependencies
-2. Runs the scraper + renderer
-3. Commits updated files back to the repository
+2. Runs the scraper + renderer for NZIHL and NZWIHL skaters and goalies
+3. Builds live assets in `docs`
+4. Deploys the site to GitHub Pages
 
 ## Notes
 
