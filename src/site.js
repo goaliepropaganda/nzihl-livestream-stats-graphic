@@ -34,6 +34,7 @@ function buildLiveHtml(payload) {
     timeStyle: "short",
     timeZone: "Pacific/Auckland"
   });
+  const cacheKey = encodeURIComponent(payload.generatedAt || new Date().toISOString());
 
   return [
     "<!doctype html>",
@@ -82,10 +83,10 @@ function buildLiveHtml(payload) {
     `      <div class=\"meta\">Last updated: ${generated} (Pacific/Auckland)</div>`,
     "    </header>",
     "    <section class=\"card\">",
-    "      <img src=\"./NZIHL_top10.png\" alt=\"NZIHL top 10 scoring leaders graphic\">",
+    `      <img src="./NZIHL_top10.png?v=${cacheKey}" alt="NZIHL top 10 scoring leaders graphic">`,
     "      <div class=\"links\">",
-    "        <a href=\"./NZIHL_top10.png\">Open PNG</a>",
-    "        <a href=\"./top10.json\">Open JSON</a>",
+    `        <a href="./NZIHL_top10.png?v=${cacheKey}">Open PNG</a>`,
+    `        <a href="./top10.json?v=${cacheKey}">Open JSON</a>`,
     "        <a href=\"./goalies/\">View Goalie Leaders</a>",
     "        <a href=\"./womens/\">View NZWIHL Scoring Leaders</a>",
     "        <a href=\"./womens-goalies/\">View NZWIHL Goalie Leaders</a>",
@@ -103,6 +104,7 @@ function buildGoalieLiveHtml(payload) {
     timeStyle: "short",
     timeZone: "Pacific/Auckland"
   });
+  const cacheKey = encodeURIComponent(payload.generatedAt || new Date().toISOString());
 
   return [
     "<!doctype html>",
@@ -151,10 +153,10 @@ function buildGoalieLiveHtml(payload) {
     `      <div class=\"meta\">Last updated: ${generated} (Pacific/Auckland)</div>`,
     "    </header>",
     "    <section class=\"card\">",
-    "      <img src=\"./NZIHL_goalies.png\" alt=\"NZIHL goalie leaders graphic\">",
+    `      <img src="./NZIHL_goalies.png?v=${cacheKey}" alt="NZIHL goalie leaders graphic">`,
     "      <div class=\"links\">",
-    "        <a href=\"./NZIHL_goalies.png\">Open PNG</a>",
-    "        <a href=\"./goalies.json\">Open JSON</a>",
+    `        <a href="./NZIHL_goalies.png?v=${cacheKey}">Open PNG</a>`,
+    `        <a href="./goalies.json?v=${cacheKey}">Open JSON</a>`,
     "        <a href=\"../\">View Scoring Leaders</a>",
     "        <a href=\"../womens/\">View NZWIHL Scoring Leaders</a>",
     "        <a href=\"../womens-goalies/\">View NZWIHL Goalie Leaders</a>",
@@ -172,6 +174,7 @@ function buildWomensLiveHtml(payload) {
     timeStyle: "short",
     timeZone: "Pacific/Auckland"
   });
+  const cacheKey = encodeURIComponent(payload.generatedAt || new Date().toISOString());
 
   return [
     "<!doctype html>",
@@ -220,10 +223,10 @@ function buildWomensLiveHtml(payload) {
     `      <div class=\"meta\">Last updated: ${generated} (Pacific/Auckland)</div>`,
     "    </header>",
     "    <section class=\"card\">",
-    "      <img src=\"./womens_top10.png\" alt=\"NZWIHL scoring leaders graphic\">",
+    `      <img src="./womens_top10.png?v=${cacheKey}" alt="NZWIHL scoring leaders graphic">`,
     "      <div class=\"links\">",
-    "        <a href=\"./womens_top10.png\">Open PNG</a>",
-    "        <a href=\"./womens_top10.json\">Open JSON</a>",
+    `        <a href="./womens_top10.png?v=${cacheKey}">Open PNG</a>`,
+    `        <a href="./womens_top10.json?v=${cacheKey}">Open JSON</a>`,
     "        <a href=\"../womens-goalies/\">View NZWIHL Goalie Leaders</a>",
     "        <a href=\"../\">View NZIHL Scoring Leaders</a>",
     "      </div>",
@@ -240,6 +243,7 @@ function buildWomensGoalieLiveHtml(payload) {
     timeStyle: "short",
     timeZone: "Pacific/Auckland"
   });
+  const cacheKey = encodeURIComponent(payload.generatedAt || new Date().toISOString());
 
   return [
     "<!doctype html>",
@@ -288,10 +292,10 @@ function buildWomensGoalieLiveHtml(payload) {
     `      <div class=\"meta\">Last updated: ${generated} (Pacific/Auckland)</div>`,
     "    </header>",
     "    <section class=\"card\">",
-    "      <img src=\"./womens_goalies.png\" alt=\"NZWIHL goalie leaders graphic\">",
+    `      <img src="./womens_goalies.png?v=${cacheKey}" alt="NZWIHL goalie leaders graphic">`,
     "      <div class=\"links\">",
-    "        <a href=\"./womens_goalies.png\">Open PNG</a>",
-    "        <a href=\"./womens_goalies.json\">Open JSON</a>",
+    `        <a href="./womens_goalies.png?v=${cacheKey}">Open PNG</a>`,
+    `        <a href="./womens_goalies.json?v=${cacheKey}">Open JSON</a>`,
     "        <a href=\"../womens/\">View NZWIHL Scoring Leaders</a>",
     "        <a href=\"../\">View NZIHL Scoring Leaders</a>",
     "      </div>",

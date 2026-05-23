@@ -1,33 +1,21 @@
 {
   "sourceUrl": "https://www.nzihl.com/leagues/stats_hockey.cfm?clientid=7131&leagueID=35499&divID=0&statType=goalie&showGameType=2&printPage=0",
-  "generatedAt": "2026-05-22T10:17:38.372Z",
+  "generatedAt": "2026-05-23T21:40:54.112Z",
   "goalies": [
     {
       "rank": 1,
-      "name": "Niall Fanning",
-      "team": "Red Devils",
-      "gp": "1",
-      "w": "0",
-      "l": "0",
-      "gaa": "3.93",
-      "svPct": ".920",
-      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675633&playerID=1955690&printPage=0",
-      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/reddevils%2Epng"
-    },
-    {
-      "rank": 2,
       "name": "Eythan Prendergast",
       "team": "Pure NZ Admirals",
-      "gp": "1",
+      "gp": "2",
       "w": "1",
-      "l": "0",
-      "gaa": "4.00",
-      "svPct": ".907",
+      "l": "1",
+      "gaa": "3.52",
+      "svPct": ".922",
       "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=674110&playerID=2266108&printPage=0",
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/admirals%2Epng"
     },
     {
-      "rank": 3,
+      "rank": 2,
       "name": "Joel Gerard",
       "team": "SkyCity Stampede",
       "gp": "2",
@@ -37,6 +25,18 @@
       "svPct": ".896",
       "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675635&playerID=2011941&printPage=0",
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/JoelGerard%2Ejpg"
+    },
+    {
+      "rank": 3,
+      "name": "Niall Fanning",
+      "team": "Red Devils",
+      "gp": "2",
+      "w": "0",
+      "l": "1",
+      "gaa": "4.61",
+      "svPct": ".894",
+      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675633&playerID=1955690&printPage=0",
+      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/reddevils%2Epng"
     },
     {
       "rank": 4,
@@ -88,6 +88,18 @@
     },
     {
       "rank": 8,
+      "name": "Alexa Gibson",
+      "team": "Botany Swarm",
+      "gp": "2",
+      "w": "1",
+      "l": "1",
+      "gaa": "4.52",
+      "svPct": ".870",
+      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=674109&playerID=2198272&printPage=0",
+      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/swarm%2Epng"
+    },
+    {
+      "rank": 9,
       "name": "Daniel Reason",
       "team": "Red Devils",
       "gp": "1",
@@ -99,28 +111,16 @@
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/reddevils%2Epng"
     },
     {
-      "rank": 9,
-      "name": "Alexa Gibson",
-      "team": "Botany Swarm",
-      "gp": "1",
-      "w": "0",
-      "l": "1",
-      "gaa": "5.04",
-      "svPct": ".833",
-      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=674109&playerID=2198272&printPage=0",
-      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/swarm%2Epng"
-    },
-    {
       "rank": 10,
-      "name": "Timothy Carey",
-      "team": "Red Devils",
-      "gp": "2",
-      "w": "0",
-      "l": "2",
-      "gaa": "6.11",
-      "svPct": ".815",
-      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675633&playerID=2013730&printPage=0",
-      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/reddevils%2Epng"
+      "name": "James Moore",
+      "team": "Dunedin Thunder",
+      "gp": "3",
+      "w": "1",
+      "l": "1",
+      "gaa": "5.29",
+      "svPct": ".819",
+      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675634&playerID=2015543&printPage=0",
+      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/JamesEASPORT%2Epng"
     }
   ]
 }

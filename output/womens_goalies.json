@@ -1,13 +1,13 @@
 {
   "sourceUrl": "https://www.nzwihl.com/leagues/stats_hockey.cfm?clientid=7132&leagueID=35501&divID=0&statType=goalie&showGameType=2&printPage=1",
-  "generatedAt": "2026-05-22T10:17:51.781Z",
+  "generatedAt": "2026-05-23T21:41:08.674Z",
   "goalies": [
     {
       "rank": 1,
       "name": "Lochlyn Henry",
       "team": "Auckland Steel",
-      "gp": "1",
-      "w": "1",
+      "gp": "2",
+      "w": "2",
       "l": "0",
       "gaa": "0.00",
       "svPct": "1.000",
@@ -16,18 +16,6 @@
     },
     {
       "rank": 2,
-      "name": "Samantha Winder",
-      "team": "Dunedin Thunder Women",
-      "gp": "1",
-      "w": "0",
-      "l": "0",
-      "gaa": "0.00",
-      "svPct": "1.000",
-      "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675638&playerID=1949577&printPage=0",
-      "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/thunderW%2Epng"
-    },
-    {
-      "rank": 3,
       "name": "Zadia Paulse",
       "team": "Wakatipu Wild",
       "gp": "1",
@@ -39,7 +27,7 @@
       "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/wild%2Epng"
     },
     {
-      "rank": 4,
+      "rank": 3,
       "name": "Jordan Wichman",
       "team": "Wakatipu Wild",
       "gp": "1",
@@ -49,6 +37,18 @@
       "svPct": ".898",
       "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675639&playerID=2037466&printPage=0",
       "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/wild%2Epng"
+    },
+    {
+      "rank": 4,
+      "name": "Samantha Winder",
+      "team": "Dunedin Thunder Women",
+      "gp": "2",
+      "w": "0",
+      "l": "1",
+      "gaa": "3.80",
+      "svPct": ".884",
+      "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675638&playerID=1949577&printPage=0",
+      "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/thunderW%2Epng"
     },
     {
       "rank": 5,
