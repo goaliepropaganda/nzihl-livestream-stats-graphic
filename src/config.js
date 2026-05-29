@@ -28,3 +28,5 @@ export const WOMENS_DATA_FILE = `${OUTPUT_DIR}/womens_top10.json`;
 export const WOMENS_IMAGE_FILE = `${OUTPUT_DIR}/womens_top10.png`;
 export const WOMENS_GOALIE_DATA_FILE = `${OUTPUT_DIR}/womens_goalies.json`;
 export const WOMENS_GOALIE_IMAGE_FILE = `${OUTPUT_DIR}/womens_goalies.png`;
+export const TEAM_COMPARISON_SOURCE_FILE = "src/Team Comparison - 30.05.2026.xlsx";
+export const TEAM_COMPARISON_IMAGE_FILE = `${OUTPUT_DIR}/team-comparison.png`;

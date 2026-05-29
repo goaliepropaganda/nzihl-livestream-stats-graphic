@@ -12,6 +12,7 @@ This project scrapes NZIHL skater and goalie leaderboards, follows each player p
 - `output/womens_top10.png`: Rendered NZWIHL player leaderboard image
 - `output/womens_goalies.json`: Structured NZWIHL goalie data
 - `output/womens_goalies.png`: Rendered NZWIHL goalie leaderboard image
+- `output/team-comparison.png`: Rendered team comparison graphic from `src/Team Comparison - 30.05.2026.xlsx`
 
 ## Local Usage
 
