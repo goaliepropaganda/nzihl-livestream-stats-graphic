@@ -1,6 +1,6 @@
 {
   "sourceUrl": "https://www.nzwihl.com/leagues/stats_hockey.cfm?clientid=7132&leagueID=35501&divID=0&statType=goalie&showGameType=2&printPage=1",
-  "generatedAt": "2026-05-23T21:41:08.674Z",
+  "generatedAt": "2026-05-29T23:30:03.545Z",
   "goalies": [
     {
       "rank": 1,
@@ -12,19 +12,19 @@
       "gaa": "0.00",
       "svPct": "1.000",
       "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675636&playerID=1938223&printPage=0",
-      "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/2026Admirals27%2Ejpg"
+      "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/LochlynHenry%2Ejpg"
     },
     {
       "rank": 2,
       "name": "Zadia Paulse",
       "team": "Wakatipu Wild",
-      "gp": "1",
+      "gp": "2",
       "w": "0",
       "l": "1",
-      "gaa": "5.00",
-      "svPct": ".919",
+      "gaa": "4.49",
+      "svPct": ".906",
       "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675639&playerID=1936932&printPage=0",
-      "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/wild%2Epng"
+      "imageUrl": null
     },
     {
       "rank": 3,
@@ -40,6 +40,18 @@
     },
     {
       "rank": 4,
+      "name": "Coco Cruickshank",
+      "team": "Canterbury Inferno",
+      "gp": "3",
+      "w": "2",
+      "l": "1",
+      "gaa": "4.30",
+      "svPct": ".888",
+      "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675637&playerID=2028145&printPage=0",
+      "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/inferno%2Epng"
+    },
+    {
+      "rank": 5,
       "name": "Samantha Winder",
       "team": "Dunedin Thunder Women",
       "gp": "2",
@@ -51,19 +63,19 @@
       "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/thunderW%2Epng"
     },
     {
-      "rank": 5,
-      "name": "Coco Cruickshank",
-      "team": "Canterbury Inferno",
-      "gp": "2",
+      "rank": 6,
+      "name": "Lucy Thomas",
+      "team": "Dunedin Thunder Women",
+      "gp": "3",
       "w": "1",
       "l": "1",
-      "gaa": "5.00",
-      "svPct": ".870",
-      "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675637&playerID=2028145&printPage=0",
-      "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/inferno%2Epng"
+      "gaa": "3.38",
+      "svPct": ".859",
+      "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675638&playerID=2155530&printPage=0",
+      "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/thunderW%2Epng"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "name": "Alexa Gibson",
       "team": "Auckland Steel",
       "gp": "1",
@@ -75,16 +87,16 @@
       "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/steel%2Epng"
     },
     {
-      "rank": 7,
-      "name": "Lucy Thomas",
-      "team": "Dunedin Thunder Women",
-      "gp": "2",
+      "rank": 8,
+      "name": "Riley Wickes-Smith",
+      "team": "Auckland Steel",
+      "gp": "1",
       "w": "1",
       "l": "0",
       "gaa": "3.00",
-      "svPct": ".792",
-      "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675638&playerID=2155530&printPage=0",
-      "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/thunderW%2Epng"
+      "svPct": ".800",
+      "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675636&playerID=2141575&printPage=0",
+      "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/steel%2Epng"
     }
   ]
 }

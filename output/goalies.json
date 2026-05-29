@@ -1,6 +1,6 @@
 {
   "sourceUrl": "https://www.nzihl.com/leagues/stats_hockey.cfm?clientid=7131&leagueID=35499&divID=0&statType=goalie&showGameType=2&printPage=0",
-  "generatedAt": "2026-05-23T21:40:54.112Z",
+  "generatedAt": "2026-05-29T23:29:23.743Z",
   "goalies": [
     {
       "rank": 1,
@@ -12,7 +12,7 @@
       "gaa": "3.52",
       "svPct": ".922",
       "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=674110&playerID=2266108&printPage=0",
-      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/admirals%2Epng"
+      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/EythanPrendergast%2Ejpg"
     },
     {
       "rank": 2,
@@ -52,18 +52,6 @@
     },
     {
       "rank": 5,
-      "name": "Connor Parr",
-      "team": "Botany Swarm",
-      "gp": "1",
-      "w": "1",
-      "l": "0",
-      "gaa": "4.00",
-      "svPct": ".886",
-      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=674109&playerID=2067513&printPage=0",
-      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/ConnorParr%2Ejpg"
-    },
-    {
-      "rank": 6,
       "name": "Aston Brookes",
       "team": "SkyCity Stampede",
       "gp": "2",
@@ -75,7 +63,7 @@
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/stampede%2Epng"
     },
     {
-      "rank": 7,
+      "rank": 6,
       "name": "Csaba Kercso-Magos",
       "team": "Pure NZ Admirals",
       "gp": "2",
@@ -84,7 +72,19 @@
       "gaa": "2.50",
       "svPct": ".875",
       "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=674110&playerID=1954432&printPage=0",
-      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/2026Admirals7%2Ejpg"
+      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/CsabaKercsoMagos%2Ejpg"
+    },
+    {
+      "rank": 7,
+      "name": "Daniel Reason",
+      "team": "Red Devils",
+      "gp": "2",
+      "w": "1",
+      "l": "1",
+      "gaa": "4.04",
+      "svPct": ".873",
+      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675633&playerID=1998206&printPage=0",
+      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/reddevils%2Epng"
     },
     {
       "rank": 8,
@@ -100,15 +100,15 @@
     },
     {
       "rank": 9,
-      "name": "Daniel Reason",
-      "team": "Red Devils",
-      "gp": "1",
-      "w": "0",
+      "name": "Connor Parr",
+      "team": "Botany Swarm",
+      "gp": "2",
+      "w": "1",
       "l": "1",
-      "gaa": "4.09",
-      "svPct": ".833",
-      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675633&playerID=1998206&printPage=0",
-      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/reddevils%2Epng"
+      "gaa": "4.51",
+      "svPct": ".868",
+      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=674109&playerID=2067513&printPage=0",
+      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/ConnorParr%2Ejpg"
     },
     {
       "rank": 10,

@@ -4,6 +4,7 @@ import {
   GOALIE_DATA_FILE,
   GOALIE_IMAGE_FILE,
   IMAGE_FILE,
+  TEAM_COMPARISON_IMAGE_FILE,
   WOMENS_DATA_FILE,
   WOMENS_GOALIE_DATA_FILE,
   WOMENS_GOALIE_IMAGE_FILE,
@@ -13,6 +14,7 @@ import {
 const LIVE_DIR = "docs";
 const LIVE_JSON_FILE = `${LIVE_DIR}/top10.json`;
 const LIVE_IMAGE_FILE = `${LIVE_DIR}/NZIHL_top10.png`;
+const TEAM_COMPARISON_LIVE_IMAGE_FILE = `${LIVE_DIR}/team-comparison.png`;
 const LIVE_INDEX_FILE = `${LIVE_DIR}/index.html`;
 const GOALIE_LIVE_DIR = `${LIVE_DIR}/goalies`;
 const GOALIE_LIVE_JSON_FILE = `${GOALIE_LIVE_DIR}/goalies.json`;
@@ -87,6 +89,7 @@ function buildLiveHtml(payload) {
     "      <div class=\"links\">",
     `        <a href="./NZIHL_top10.png?v=${cacheKey}">Open PNG</a>`,
     `        <a href="./top10.json?v=${cacheKey}">Open JSON</a>`,
+    `        <a href="./team-comparison.png?v=${cacheKey}">Open Team Comparison PNG</a>`,
     "        <a href=\"./goalies/\">View Goalie Leaders</a>",
     "        <a href=\"./womens/\">View NZWIHL Scoring Leaders</a>",
     "        <a href=\"./womens-goalies/\">View NZWIHL Goalie Leaders</a>",
@@ -323,6 +326,7 @@ export async function buildLiveSite() {
 
   await copyFile(DATA_FILE, LIVE_JSON_FILE);
   await copyFile(IMAGE_FILE, LIVE_IMAGE_FILE);
+  await copyFile(TEAM_COMPARISON_IMAGE_FILE, TEAM_COMPARISON_LIVE_IMAGE_FILE);
   await writeFile(LIVE_INDEX_FILE, `${buildLiveHtml(scoringPayload)}\n`, "utf8");
 
   await copyFile(GOALIE_DATA_FILE, GOALIE_LIVE_JSON_FILE);

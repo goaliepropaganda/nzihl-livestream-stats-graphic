@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -33,6 +33,19 @@ jobs:
 
       - name: Build live assets
         run: npm run build:live
+
+      - name: Commit refreshed generated assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs output
+
+          if git diff --cached --quiet; then
+            echo "No generated asset changes to commit."
+          else
+            git commit -m "Refresh generated leaders data"
+            git push origin main
+          fi
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

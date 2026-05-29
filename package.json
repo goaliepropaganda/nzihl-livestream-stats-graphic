@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "build": "node src/index.js",
-    "build:live": "node src/index.js && node src/site.js",
+    "build:live": "node src/index.js && node src/render_comparison.js && node src/site.js",
     "scrape": "node src/scrape.js",
     "scrape:goalies": "node src/scrape_goalies.js",
     "scrape:womens": "node src/scrape_womens.js",
