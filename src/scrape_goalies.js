@@ -105,11 +105,6 @@ function getCellText(cells, index) {
   return cheerio.load(cell).text().replace(/\s+/g, " ").trim();
 }
 
-function getNumericSortValue(value) {
-  const n = Number.parseFloat(String(value).replace("%", ""));
-  return Number.isFinite(n) ? n : -Infinity;
-}
-
 export async function scrapeTopGoalies() {
   const { data } = await axios.get(GOALIE_STATS_URL, {
     headers: REQUEST_HEADERS,
@@ -143,8 +138,10 @@ export async function scrapeTopGoalies() {
     const href = goalieAnchor.attr("href");
     const profileUrl = href ? new URL(href, BASE_URL).toString() : null;
 
+    const rowRank = Number.parseInt(getCellText(cells, 0), 10);
+
     rows.push({
-      rank: 0,
+      rank: Number.isFinite(rowRank) ? rowRank : rows.length + 1,
       name: toSentenceCaseIfLower(rawName),
       team: cleanTeamName(getCellText(cells, map.get("TEAM"))),
       gp: getCellText(cells, map.get("GP")),
@@ -158,24 +155,8 @@ export async function scrapeTopGoalies() {
   }
 
   const topGoalies = rows
-    .sort((left, right) => {
-      const svDiff = getNumericSortValue(right.svPct) - getNumericSortValue(left.svPct);
-      if (svDiff !== 0) {
-        return svDiff;
-      }
-
-      const gaaDiff = getNumericSortValue(left.gaa) - getNumericSortValue(right.gaa);
-      if (gaaDiff !== 0) {
-        return gaaDiff;
-      }
-
-      return getNumericSortValue(right.gp) - getNumericSortValue(left.gp);
-    })
-    .slice(0, 10)
-    .map((goalie, index) => ({
-      ...goalie,
-      rank: index + 1
-    }));
+    .sort((left, right) => left.rank - right.rank)
+    .slice(0, 10);
 
   for (const goalie of topGoalies) {
     if (!goalie.profileUrl) {

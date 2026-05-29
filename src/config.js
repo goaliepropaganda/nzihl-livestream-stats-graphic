@@ -2,7 +2,7 @@ export const STATS_URL =
   "https://www.nzihl.com/leagues/stats_hockey.cfm?clientid=7131&leagueid=35499&printPage=1";
 
 export const GOALIE_STATS_URL =
-  "https://www.nzihl.com/leagues/stats_hockey.cfm?clientid=7131&leagueID=35499&divID=0&statType=goalie&showGameType=2&printPage=0";
+  "https://www.nzihl.com/leagues/stats_hockey.cfm?clientid=7131&leagueID=35499&divID=0&statType=goalie&showGameType=2&printPage=1";
 
 export const WOMENS_STATS_URL =
   "https://www.nzwihl.com/leagues/stats_hockey.cfm?clientid=7132&leagueid=35501&printPage=1";
