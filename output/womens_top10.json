@@ -1,6 +1,6 @@
 {
   "sourceUrl": "https://www.nzwihl.com/leagues/stats_hockey.cfm?clientid=7132&leagueid=35501&printPage=1",
-  "generatedAt": "2026-05-30T00:23:18.000Z",
+  "generatedAt": "2026-05-30T12:19:31.506Z",
   "players": [
     {
       "rank": 1,
@@ -35,17 +35,31 @@
       "name": "Gabrielle Guerin",
       "position": "F",
       "team": "Canterbury Inferno",
-      "gp": "3",
+      "gp": "4",
       "g": "3",
-      "a": "3",
-      "pts": "6",
+      "a": "5",
+      "pts": "8",
       "pPerGame": "2.0",
-      "plusMinus": "3",
+      "plusMinus": "4",
       "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675637&playerID=2101663&printPage=0",
       "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/inferno%2Epng"
     },
     {
       "rank": 4,
+      "name": "Nerhys Gordon",
+      "position": "F",
+      "team": "Canterbury Inferno",
+      "gp": "4",
+      "g": "5",
+      "a": "1",
+      "pts": "6",
+      "pPerGame": "1.5",
+      "plusMinus": "-4",
+      "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675637&playerID=1937245&printPage=0",
+      "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/inferno%2Epng"
+    },
+    {
+      "rank": 5,
       "name": "Hannah Shields",
       "position": "F",
       "team": "Auckland Steel",
@@ -57,20 +71,6 @@
       "plusMinus": "5",
       "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675636&playerID=1952810&printPage=0",
       "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/steel%2Epng"
-    },
-    {
-      "rank": 5,
-      "name": "Nerhys Gordon",
-      "position": "F",
-      "team": "Canterbury Inferno",
-      "gp": "3",
-      "g": "4",
-      "a": "1",
-      "pts": "5",
-      "pPerGame": "1.7",
-      "plusMinus": "-5",
-      "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675637&playerID=1937245&printPage=0",
-      "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/inferno%2Epng"
     },
     {
       "rank": 6,
@@ -102,6 +102,20 @@
     },
     {
       "rank": 8,
+      "name": "Gabby Mills",
+      "position": "F",
+      "team": "Wakatipu Wild",
+      "gp": "4",
+      "g": "4",
+      "a": "1",
+      "pts": "5",
+      "pPerGame": "1.3",
+      "plusMinus": "2",
+      "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675639&playerID=2082509&printPage=0",
+      "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/wild%2Epng"
+    },
+    {
+      "rank": 9,
       "name": "Helen Murray",
       "position": "F",
       "team": "Auckland Steel",
@@ -115,7 +129,7 @@
       "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/steel%2Epng"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "name": "Jaime Jones",
       "position": "D",
       "team": "Auckland Steel",
@@ -126,20 +140,6 @@
       "pPerGame": "1.3",
       "plusMinus": "7",
       "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675636&playerID=1944394&printPage=0",
-      "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/steel%2Epng"
-    },
-    {
-      "rank": 10,
-      "name": "Anjali Mulari",
-      "position": "F",
-      "team": "Auckland Steel",
-      "gp": "4",
-      "g": "2",
-      "a": "2",
-      "pts": "4",
-      "pPerGame": "1.0",
-      "plusMinus": "4",
-      "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675636&playerID=2088249&printPage=0",
       "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/steel%2Epng"
     }
   ]

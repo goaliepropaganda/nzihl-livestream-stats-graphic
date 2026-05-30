@@ -1,6 +1,6 @@
 {
   "sourceUrl": "https://www.nzwihl.com/leagues/stats_hockey.cfm?clientid=7132&leagueID=35501&divID=0&statType=goalie&showGameType=2&printPage=1",
-  "generatedAt": "2026-05-30T00:23:21.169Z",
+  "generatedAt": "2026-05-30T12:19:37.484Z",
   "goalies": [
     {
       "rank": 1,
@@ -30,11 +30,11 @@
       "rank": 3,
       "name": "Jordan Wichman",
       "team": "Wakatipu Wild",
-      "gp": "1",
+      "gp": "2",
       "w": "0",
-      "l": "1",
-      "gaa": "5.00",
-      "svPct": ".898",
+      "l": "2",
+      "gaa": "4.32",
+      "svPct": ".893",
       "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675639&playerID=2037466&printPage=0",
       "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/wild%2Epng"
     },
@@ -64,6 +64,18 @@
     },
     {
       "rank": 6,
+      "name": "Rosemary Lee",
+      "team": "Canterbury Inferno",
+      "gp": "1",
+      "w": "1",
+      "l": "-1",
+      "gaa": "3.69",
+      "svPct": ".882",
+      "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675637&playerID=2156625&printPage=0",
+      "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/inferno%2Epng"
+    },
+    {
+      "rank": 7,
       "name": "Lucy Thomas",
       "team": "Dunedin Thunder Women",
       "gp": "3",
@@ -75,7 +87,7 @@
       "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/thunderW%2Epng"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "name": "Alexa Gibson",
       "team": "Auckland Steel",
       "gp": "1",
@@ -87,7 +99,7 @@
       "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/steel%2Epng"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "name": "Riley Wickes-Smith",
       "team": "Auckland Steel",
       "gp": "1",
