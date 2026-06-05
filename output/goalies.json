@@ -1,6 +1,6 @@
 {
   "sourceUrl": "https://www.nzihl.com/leagues/stats_hockey.cfm?clientid=7131&leagueID=35499&divID=0&statType=goalie&showGameType=2&printPage=1",
-  "generatedAt": "2026-06-05T00:24:41.119Z",
+  "generatedAt": "2026-06-05T12:52:34.122Z",
   "goalies": [
     {
       "rank": 1,
@@ -30,11 +30,11 @@
       "rank": 3,
       "name": "Joel Gerard",
       "team": "SkyCity Stampede",
-      "gp": "3",
-      "w": "3",
+      "gp": "4",
+      "w": "4",
       "l": "0",
-      "gaa": "3.31",
-      "svPct": ".901",
+      "gaa": "2.99",
+      "svPct": ".917",
       "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675635&playerID=2011941&printPage=0",
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/JoelGerard%2Ejpg"
     },
@@ -88,18 +88,6 @@
     },
     {
       "rank": 8,
-      "name": "Connor Parr",
-      "team": "Botany Swarm",
-      "gp": "2",
-      "w": "1",
-      "l": "1",
-      "gaa": "4.51",
-      "svPct": ".868",
-      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=674109&playerID=2067513&printPage=0",
-      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/ConnorParr%2Ejpg"
-    },
-    {
-      "rank": 9,
       "name": "Niall Fanning",
       "team": "Red Devils",
       "gp": "2",
@@ -111,7 +99,7 @@
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/N%5FFanning%2Ejpg"
     },
     {
-      "rank": 10,
+      "rank": 9,
       "name": "James Moore",
       "team": "Dunedin Thunder",
       "gp": "3",
@@ -121,6 +109,18 @@
       "svPct": ".819",
       "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675634&playerID=2015543&printPage=0",
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/JamesEASPORT%2Epng"
+    },
+    {
+      "rank": 10,
+      "name": "Timothy Carey",
+      "team": "Red Devils",
+      "gp": "2",
+      "w": "0",
+      "l": "2",
+      "gaa": "6.11",
+      "svPct": ".815",
+      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675633&playerID=2013730&printPage=0",
+      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/reddevils%2Epng"
     }
   ]
 }
