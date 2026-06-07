@@ -1,16 +1,16 @@
 {
   "sourceUrl": "https://www.nzwihl.com/leagues/stats_hockey.cfm?clientid=7132&leagueID=35501&divID=0&statType=goalie&showGameType=2&printPage=1",
-  "generatedAt": "2026-06-07T00:23:41.377Z",
+  "generatedAt": "2026-06-07T12:26:16.220Z",
   "goalies": [
     {
       "rank": 1,
       "name": "Lochlyn Henry",
       "team": "Auckland Steel",
-      "gp": "2",
-      "w": "2",
+      "gp": "3",
+      "w": "3",
       "l": "0",
-      "gaa": "0.00",
-      "svPct": "1.000",
+      "gaa": "1.00",
+      "svPct": ".945",
       "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675636&playerID=1938223&printPage=0",
       "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/LochlynHenry%2Ejpg"
     },
@@ -40,6 +40,18 @@
     },
     {
       "rank": 4,
+      "name": "Coco Cruickshank",
+      "team": "Canterbury Inferno",
+      "gp": "4",
+      "w": "2",
+      "l": "2",
+      "gaa": "3.98",
+      "svPct": ".901",
+      "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675637&playerID=2028145&printPage=0",
+      "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/inferno%2Epng"
+    },
+    {
+      "rank": 5,
       "name": "Jordan Wichman",
       "team": "Wakatipu Wild",
       "gp": "2",
@@ -51,7 +63,7 @@
       "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/wild%2Epng"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "name": "Samantha Winder",
       "team": "Dunedin Thunder Women",
       "gp": "3",
@@ -63,19 +75,19 @@
       "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/thunderW%2Epng"
     },
     {
-      "rank": 6,
-      "name": "Coco Cruickshank",
-      "team": "Canterbury Inferno",
-      "gp": "3",
+      "rank": 7,
+      "name": "Lucy Thomas",
+      "team": "Dunedin Thunder Women",
+      "gp": "4",
       "w": "2",
       "l": "1",
-      "gaa": "4.30",
-      "svPct": ".888",
-      "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675637&playerID=2028145&printPage=0",
-      "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/inferno%2Epng"
+      "gaa": "2.46",
+      "svPct": ".882",
+      "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675638&playerID=2155530&printPage=0",
+      "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/thunderW%2Epng"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "name": "Zadia Paulse",
       "team": "Wakatipu Wild",
       "gp": "3",
@@ -85,18 +97,6 @@
       "svPct": ".876",
       "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675639&playerID=1936932&printPage=0",
       "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/wild%2Epng"
-    },
-    {
-      "rank": 8,
-      "name": "Lucy Thomas",
-      "team": "Dunedin Thunder Women",
-      "gp": "3",
-      "w": "1",
-      "l": "1",
-      "gaa": "3.38",
-      "svPct": ".859",
-      "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675638&playerID=2155530&printPage=0",
-      "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/thunderW%2Epng"
     },
     {
       "rank": 9,
@@ -109,6 +109,18 @@
       "svPct": ".800",
       "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675636&playerID=2141575&printPage=0",
       "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/steel%2Epng"
+    },
+    {
+      "rank": 10,
+      "name": "Tuhi-Mareikura Hopa-Thomson",
+      "team": "Wakatipu Wild",
+      "gp": "1",
+      "w": "0",
+      "l": "1",
+      "gaa": "11.00",
+      "svPct": ".788",
+      "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675639&playerID=2247142&printPage=0",
+      "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/wild%2Epng"
     }
   ]
 }
