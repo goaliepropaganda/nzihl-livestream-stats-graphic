@@ -1,6 +1,6 @@
 {
   "sourceUrl": "https://www.nzihl.com/leagues/stats_hockey.cfm?clientid=7131&leagueID=35499&divID=0&statType=goalie&showGameType=2&printPage=1",
-  "generatedAt": "2026-06-12T00:28:12.469Z",
+  "generatedAt": "2026-06-12T12:59:50.084Z",
   "goalies": [
     {
       "rank": 1,
@@ -100,27 +100,27 @@
     },
     {
       "rank": 9,
-      "name": "Timothy Carey",
-      "team": "Red Devils",
-      "gp": "3",
-      "w": "1",
-      "l": "2",
-      "gaa": "4.72",
-      "svPct": ".865",
-      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675633&playerID=2013730&printPage=0",
-      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/reddevils%2Epng"
+      "name": "James Moore",
+      "team": "Dunedin Thunder",
+      "gp": "4",
+      "w": "2",
+      "l": "1",
+      "gaa": "4.92",
+      "svPct": ".835",
+      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675634&playerID=2015543&printPage=0",
+      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/JamesEASPORT%2Epng"
     },
     {
       "rank": 10,
-      "name": "James Moore",
-      "team": "Dunedin Thunder",
-      "gp": "3",
+      "name": "Timothy Carey",
+      "team": "Red Devils",
+      "gp": "4",
       "w": "1",
-      "l": "1",
-      "gaa": "5.29",
-      "svPct": ".819",
-      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675634&playerID=2015543&printPage=0",
-      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/JamesEASPORT%2Epng"
+      "l": "3",
+      "gaa": "5.07",
+      "svPct": ".864",
+      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675633&playerID=2013730&printPage=0",
+      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/reddevils%2Epng"
     }
   ]
 }
