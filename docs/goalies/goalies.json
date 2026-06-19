@@ -1,16 +1,16 @@
 {
   "sourceUrl": "https://www.nzihl.com/leagues/stats_hockey.cfm?clientid=7131&leagueID=35499&divID=0&statType=goalie&showGameType=2&printPage=1",
-  "generatedAt": "2026-06-19T00:31:46.610Z",
+  "generatedAt": "2026-06-19T13:03:50.813Z",
   "goalies": [
     {
       "rank": 1,
       "name": "Joel Gerard",
       "team": "SkyCity Stampede",
-      "gp": "4",
-      "w": "4",
+      "gp": "5",
+      "w": "5",
       "l": "0",
-      "gaa": "2.99",
-      "svPct": ".917",
+      "gaa": "3.19",
+      "svPct": ".905",
       "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675635&playerID=2011941&printPage=0",
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/JoelGerard%2Ejpg"
     },
@@ -100,18 +100,6 @@
     },
     {
       "rank": 9,
-      "name": "James Moore",
-      "team": "Dunedin Thunder",
-      "gp": "4",
-      "w": "2",
-      "l": "1",
-      "gaa": "4.92",
-      "svPct": ".835",
-      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675634&playerID=2015543&printPage=0",
-      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/JamesEASPORT%2Epng"
-    },
-    {
-      "rank": 10,
       "name": "Timothy Carey",
       "team": "Red Devils",
       "gp": "4",
@@ -121,6 +109,18 @@
       "svPct": ".864",
       "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675633&playerID=2013730&printPage=0",
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/reddevils%2Epng"
+    },
+    {
+      "rank": 10,
+      "name": "Connor Parr",
+      "team": "Botany Swarm",
+      "gp": "4",
+      "w": "1",
+      "l": "2",
+      "gaa": "5.65",
+      "svPct": ".854",
+      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=674109&playerID=2067513&printPage=0",
+      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/ConnorParr1%2Ejpg"
     }
   ]
 }
