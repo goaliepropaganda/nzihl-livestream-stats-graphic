@@ -1,21 +1,33 @@
 {
   "sourceUrl": "https://www.nzwihl.com/leagues/stats_hockey.cfm?clientid=7132&leagueID=35501&divID=0&statType=goalie&showGameType=2&printPage=1",
-  "generatedAt": "2026-06-21T00:25:41.194Z",
+  "generatedAt": "2026-06-21T12:33:18.360Z",
   "goalies": [
     {
       "rank": 1,
       "name": "Lochlyn Henry",
       "team": "Auckland Steel",
-      "gp": "3",
-      "w": "3",
+      "gp": "4",
+      "w": "4",
       "l": "0",
       "gaa": "1.00",
-      "svPct": ".945",
+      "svPct": ".949",
       "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675636&playerID=1938223&printPage=0",
       "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/LochlynHenry%2Ejpg"
     },
     {
       "rank": 2,
+      "name": "Jordan Wichman",
+      "team": "Wakatipu Wild",
+      "gp": "4",
+      "w": "1",
+      "l": "2",
+      "gaa": "2.86",
+      "svPct": ".915",
+      "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675639&playerID=2037466&printPage=0",
+      "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/wild%2Epng"
+    },
+    {
+      "rank": 3,
       "name": "Rosemary Lee",
       "team": "Canterbury Inferno",
       "gp": "2",
@@ -27,31 +39,7 @@
       "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/inferno%2Epng"
     },
     {
-      "rank": 3,
-      "name": "Jordan Wichman",
-      "team": "Wakatipu Wild",
-      "gp": "3",
-      "w": "1",
-      "l": "2",
-      "gaa": "3.54",
-      "svPct": ".904",
-      "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675639&playerID=2037466&printPage=0",
-      "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/wild%2Epng"
-    },
-    {
       "rank": 4,
-      "name": "Coco Cruickshank",
-      "team": "Canterbury Inferno",
-      "gp": "5",
-      "w": "2",
-      "l": "3",
-      "gaa": "3.79",
-      "svPct": ".902",
-      "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675637&playerID=2028145&printPage=0",
-      "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/2026InfernoCocoCRUICKSHANK%2Ejpg"
-    },
-    {
-      "rank": 5,
       "name": "Alexa Gibson",
       "team": "Auckland Steel",
       "gp": "3",
@@ -63,16 +51,28 @@
       "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/steel%2Epng"
     },
     {
-      "rank": 6,
+      "rank": 5,
       "name": "Lucy Thomas",
       "team": "Dunedin Thunder Women",
-      "gp": "4",
-      "w": "2",
+      "gp": "5",
+      "w": "3",
       "l": "1",
-      "gaa": "2.46",
-      "svPct": ".882",
+      "gaa": "2.11",
+      "svPct": ".892",
       "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675638&playerID=2155530&printPage=0",
       "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/thunderW%2Epng"
+    },
+    {
+      "rank": 6,
+      "name": "Coco Cruickshank",
+      "team": "Canterbury Inferno",
+      "gp": "6",
+      "w": "2",
+      "l": "4",
+      "gaa": "4.49",
+      "svPct": ".887",
+      "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675637&playerID=2028145&printPage=0",
+      "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/2026InfernoCocoCRUICKSHANK%2Ejpg"
     },
     {
       "rank": 7,
@@ -96,30 +96,6 @@
       "gaa": "5.66",
       "svPct": ".876",
       "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675639&playerID=1936932&printPage=0",
-      "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/wild%2Epng"
-    },
-    {
-      "rank": 9,
-      "name": "Riley Wickes-Smith",
-      "team": "Auckland Steel",
-      "gp": "1",
-      "w": "1",
-      "l": "0",
-      "gaa": "3.00",
-      "svPct": ".800",
-      "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675636&playerID=2141575&printPage=0",
-      "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/steel%2Epng"
-    },
-    {
-      "rank": 10,
-      "name": "Tuhi-Mareikura Hopa-Thomson",
-      "team": "Wakatipu Wild",
-      "gp": "1",
-      "w": "0",
-      "l": "1",
-      "gaa": "11.00",
-      "svPct": ".788",
-      "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675639&playerID=2247142&printPage=0",
       "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/wild%2Epng"
     }
   ]

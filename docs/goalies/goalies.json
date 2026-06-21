@@ -1,6 +1,6 @@
 {
   "sourceUrl": "https://www.nzihl.com/leagues/stats_hockey.cfm?clientid=7131&leagueID=35499&divID=0&statType=goalie&showGameType=2&printPage=1",
-  "generatedAt": "2026-06-21T00:25:30.185Z",
+  "generatedAt": "2026-06-21T12:33:11.192Z",
   "goalies": [
     {
       "rank": 1,
@@ -42,11 +42,11 @@
       "rank": 4,
       "name": "Csaba Kercso-Magos",
       "team": "Pure NZ Admirals",
-      "gp": "4",
-      "w": "3",
+      "gp": "5",
+      "w": "4",
       "l": "1",
-      "gaa": "3.50",
-      "svPct": ".874",
+      "gaa": "3.40",
+      "svPct": ".873",
       "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=674110&playerID=1954432&printPage=0",
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/CsabaKercsoMagos%2Ejpg"
     },
