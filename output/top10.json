@@ -1,6 +1,6 @@
 {
   "sourceUrl": "https://www.nzihl.com/leagues/stats_hockey.cfm?clientid=7131&leagueid=35499&printPage=1",
-  "generatedAt": "2026-06-22T00:25:59.866Z",
+  "generatedAt": "2026-06-22T13:47:42.132Z",
   "players": [
     {
       "rank": 1,
@@ -9,9 +9,9 @@
       "team": "SkyCity Stampede",
       "gp": "8",
       "g": "15",
-      "a": "12",
-      "pts": "27",
-      "pPerGame": "3.4",
+      "a": "14",
+      "pts": "29",
+      "pPerGame": "3.6",
       "plusMinus": "28",
       "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675635&playerID=2166971&printPage=0",
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/stampede%2Epng"
@@ -32,6 +32,20 @@
     },
     {
       "rank": 3,
+      "name": "Luke Stegmann",
+      "position": "D",
+      "team": "Dunedin Thunder",
+      "gp": "10",
+      "g": "13",
+      "a": "12",
+      "pts": "25",
+      "pPerGame": "2.5",
+      "plusMinus": "11",
+      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675634&playerID=2365698&printPage=0",
+      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/LukeEASPORT%2Epng"
+    },
+    {
+      "rank": 4,
       "name": "Alex Gagnon",
       "position": "F",
       "team": "Red Devils",
@@ -45,29 +59,15 @@
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/A%5FGagnon%2Ejpg"
     },
     {
-      "rank": 4,
-      "name": "Luke Stegmann",
-      "position": "D",
-      "team": "Dunedin Thunder",
-      "gp": "10",
-      "g": "13",
-      "a": "11",
-      "pts": "24",
-      "pPerGame": "2.4",
-      "plusMinus": "11",
-      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675634&playerID=2365698&printPage=0",
-      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/LukeEASPORT%2Epng"
-    },
-    {
       "rank": 5,
       "name": "Cole Beckstead",
       "position": "F",
       "team": "Dunedin Thunder",
       "gp": "10",
       "g": "7",
-      "a": "15",
-      "pts": "22",
-      "pPerGame": "2.2",
+      "a": "14",
+      "pts": "21",
+      "pPerGame": "2.1",
       "plusMinus": "10",
       "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675634&playerID=2346738&printPage=0",
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/ColeBecksteadEASPORT2%2Epng"
