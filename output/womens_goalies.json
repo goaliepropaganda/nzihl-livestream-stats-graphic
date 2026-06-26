@@ -1,6 +1,6 @@
 {
   "sourceUrl": "https://www.nzwihl.com/leagues/stats_hockey.cfm?clientid=7132&leagueID=35501&divID=0&statType=goalie&showGameType=2&printPage=1",
-  "generatedAt": "2026-06-26T00:25:57.276Z",
+  "generatedAt": "2026-06-26T12:36:09.600Z",
   "goalies": [
     {
       "rank": 1,
@@ -18,11 +18,11 @@
       "rank": 2,
       "name": "Jordan Wichman",
       "team": "Wakatipu Wild",
-      "gp": "4",
+      "gp": "5",
       "w": "1",
-      "l": "2",
-      "gaa": "2.86",
-      "svPct": ".915",
+      "l": "3",
+      "gaa": "3.08",
+      "svPct": ".911",
       "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675639&playerID=2037466&printPage=0",
       "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/wild%2Epng"
     },
@@ -52,6 +52,18 @@
     },
     {
       "rank": 5,
+      "name": "Samantha Winder",
+      "team": "Dunedin Thunder Women",
+      "gp": "5",
+      "w": "2",
+      "l": "1",
+      "gaa": "2.31",
+      "svPct": ".895",
+      "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675638&playerID=1949577&printPage=0",
+      "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/thunderW%2Epng"
+    },
+    {
+      "rank": 6,
       "name": "Lucy Thomas",
       "team": "Dunedin Thunder Women",
       "gp": "5",
@@ -63,7 +75,7 @@
       "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/thunderW%2Epng"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "name": "Coco Cruickshank",
       "team": "Canterbury Inferno",
       "gp": "6",
@@ -73,18 +85,6 @@
       "svPct": ".887",
       "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675637&playerID=2028145&printPage=0",
       "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/2026InfernoCocoCRUICKSHANK%2Ejpg"
-    },
-    {
-      "rank": 7,
-      "name": "Samantha Winder",
-      "team": "Dunedin Thunder Women",
-      "gp": "4",
-      "w": "1",
-      "l": "1",
-      "gaa": "2.70",
-      "svPct": ".882",
-      "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675638&playerID=1949577&printPage=0",
-      "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/thunderW%2Epng"
     },
     {
       "rank": 8,
