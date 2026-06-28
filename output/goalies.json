@@ -1,6 +1,6 @@
 {
   "sourceUrl": "https://www.nzihl.com/leagues/stats_hockey.cfm?clientid=7131&leagueID=35499&divID=0&statType=goalie&showGameType=2&printPage=1",
-  "generatedAt": "2026-06-28T00:21:56.686Z",
+  "generatedAt": "2026-06-28T12:21:44.588Z",
   "goalies": [
     {
       "rank": 1,
@@ -42,7 +42,7 @@
       "rank": 4,
       "name": "Toby Schuck",
       "team": "Dunedin Thunder",
-      "gp": "7",
+      "gp": "8",
       "w": "4",
       "l": "2",
       "gaa": "3.57",
@@ -54,11 +54,11 @@
       "rank": 5,
       "name": "Eythan Prendergast",
       "team": "Pure NZ Admirals",
-      "gp": "5",
-      "w": "1",
+      "gp": "6",
+      "w": "2",
       "l": "4",
-      "gaa": "4.04",
-      "svPct": ".895",
+      "gaa": "3.98",
+      "svPct": ".890",
       "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=674110&playerID=2266108&printPage=0",
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/EythanPrendergast%2Ejpg"
     },
@@ -76,6 +76,18 @@
     },
     {
       "rank": 7,
+      "name": "Grace Harrison",
+      "team": "Botany Swarm",
+      "gp": "2",
+      "w": "0",
+      "l": "1",
+      "gaa": "4.36",
+      "svPct": ".809",
+      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=674109&playerID=1954595&printPage=0",
+      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/swarm%2Epng"
+    },
+    {
+      "rank": 8,
       "name": "Connor Parr",
       "team": "Botany Swarm",
       "gp": "6",
@@ -87,7 +99,7 @@
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/ConnorParr1%2Ejpg"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "name": "Alexa Gibson",
       "team": "Botany Swarm",
       "gp": "2",
@@ -99,7 +111,7 @@
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/AlexaGibson%2Ejpg"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "name": "Niall Fanning",
       "team": "Red Devils",
       "gp": "2",
@@ -109,18 +121,6 @@
       "svPct": ".894",
       "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675633&playerID=1955690&printPage=0",
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/N%5FFanning%2Ejpg"
-    },
-    {
-      "rank": 10,
-      "name": "Timothy Carey",
-      "team": "Red Devils",
-      "gp": "5",
-      "w": "1",
-      "l": "4",
-      "gaa": "5.27",
-      "svPct": ".865",
-      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675633&playerID=2013730&printPage=0",
-      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/reddevils%2Epng"
     }
   ]
 }
