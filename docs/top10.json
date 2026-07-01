@@ -1,9 +1,23 @@
 {
   "sourceUrl": "https://www.nzihl.com/leagues/stats_hockey.cfm?clientid=7131&leagueid=35499&printPage=1",
-  "generatedAt": "2026-07-01T00:24:19.937Z",
+  "generatedAt": "2026-07-01T12:50:42.711Z",
   "players": [
     {
       "rank": 1,
+      "name": "Luke Stegmann",
+      "position": "D",
+      "team": "Dunedin Thunder",
+      "gp": "12",
+      "g": "15",
+      "a": "17",
+      "pts": "32",
+      "pPerGame": "2.7",
+      "plusMinus": "13",
+      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675634&playerID=2365698&printPage=0",
+      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/LukeEASPORT%2Epng"
+    },
+    {
+      "rank": 2,
       "name": "Alex Gagnon",
       "position": "F",
       "team": "Red Devils",
@@ -17,29 +31,15 @@
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/A%5FGagnon%2Ejpg"
     },
     {
-      "rank": 2,
-      "name": "Luke Stegmann",
-      "position": "D",
-      "team": "Dunedin Thunder",
-      "gp": "12",
-      "g": "15",
-      "a": "15",
-      "pts": "30",
-      "pPerGame": "2.5",
-      "plusMinus": "13",
-      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675634&playerID=2365698&printPage=0",
-      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/LukeEASPORT%2Epng"
-    },
-    {
       "rank": 3,
       "name": "Cole Beckstead",
       "position": "F",
       "team": "Dunedin Thunder",
       "gp": "12",
       "g": "13",
-      "a": "17",
-      "pts": "30",
-      "pPerGame": "2.5",
+      "a": "18",
+      "pts": "31",
+      "pPerGame": "2.6",
       "plusMinus": "14",
       "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675634&playerID=2346738&printPage=0",
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/ColeBecksteadEASPORT2%2Epng"
@@ -93,9 +93,9 @@
       "team": "Dunedin Thunder",
       "gp": "11",
       "g": "9",
-      "a": "10",
-      "pts": "19",
-      "pPerGame": "1.7",
+      "a": "11",
+      "pts": "20",
+      "pPerGame": "1.8",
       "plusMinus": "5",
       "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675634&playerID=2470835&printPage=0",
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/SamEASPORT%2Epng"
