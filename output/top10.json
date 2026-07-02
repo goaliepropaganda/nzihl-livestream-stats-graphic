@@ -1,23 +1,9 @@
 {
   "sourceUrl": "https://www.nzihl.com/leagues/stats_hockey.cfm?clientid=7131&leagueid=35499&printPage=1",
-  "generatedAt": "2026-07-02T00:24:02.783Z",
+  "generatedAt": "2026-07-02T12:34:10.223Z",
   "players": [
     {
       "rank": 1,
-      "name": "Luke Stegmann",
-      "position": "D",
-      "team": "Dunedin Thunder",
-      "gp": "12",
-      "g": "15",
-      "a": "17",
-      "pts": "32",
-      "pPerGame": "2.7",
-      "plusMinus": "13",
-      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675634&playerID=2365698&printPage=0",
-      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/LukeEASPORT%2Epng"
-    },
-    {
-      "rank": 2,
       "name": "Alex Gagnon",
       "position": "F",
       "team": "Red Devils",
@@ -29,6 +15,20 @@
       "plusMinus": "13",
       "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675633&playerID=2470539&printPage=0",
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/A%5FGagnon%2Ejpg"
+    },
+    {
+      "rank": 2,
+      "name": "Luke Stegmann",
+      "position": "D",
+      "team": "Dunedin Thunder",
+      "gp": "12",
+      "g": "15",
+      "a": "16",
+      "pts": "31",
+      "pPerGame": "2.6",
+      "plusMinus": "13",
+      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675634&playerID=2365698&printPage=0",
+      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/LukeEASPORT%2Epng"
     },
     {
       "rank": 3,
