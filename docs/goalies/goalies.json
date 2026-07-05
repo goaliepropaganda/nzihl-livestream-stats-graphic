@@ -1,6 +1,6 @@
 {
   "sourceUrl": "https://www.nzihl.com/leagues/stats_hockey.cfm?clientid=7131&leagueID=35499&divID=0&statType=goalie&showGameType=2&printPage=1",
-  "generatedAt": "2026-07-05T00:20:14.881Z",
+  "generatedAt": "2026-07-05T12:24:25.760Z",
   "goalies": [
     {
       "rank": 1,
@@ -30,11 +30,11 @@
       "rank": 3,
       "name": "Joel Gerard",
       "team": "SkyCity Stampede",
-      "gp": "5",
-      "w": "5",
+      "gp": "6",
+      "w": "6",
       "l": "0",
-      "gaa": "3.19",
-      "svPct": ".905",
+      "gaa": "3.16",
+      "svPct": ".901",
       "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675635&playerID=2011941&printPage=0",
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/JoelGerard%2Ejpg"
     },
@@ -102,11 +102,11 @@
       "rank": 9,
       "name": "Connor Parr",
       "team": "Botany Swarm",
-      "gp": "6",
+      "gp": "7",
       "w": "2",
-      "l": "3",
-      "gaa": "4.41",
-      "svPct": ".878",
+      "l": "4",
+      "gaa": "4.50",
+      "svPct": ".880",
       "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=674109&playerID=2067513&printPage=0",
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/ConnorParr1%2Ejpg"
     },
