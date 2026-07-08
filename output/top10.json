@@ -1,6 +1,6 @@
 {
   "sourceUrl": "https://www.nzihl.com/leagues/stats_hockey.cfm?clientid=7131&leagueid=35499&printPage=1",
-  "generatedAt": "2026-07-08T00:18:41.455Z",
+  "generatedAt": "2026-07-08T12:28:02.759Z",
   "players": [
     {
       "rank": 1,
@@ -9,9 +9,9 @@
       "team": "SkyCity Stampede",
       "gp": "10",
       "g": "17",
-      "a": "15",
-      "pts": "32",
-      "pPerGame": "3.2",
+      "a": "16",
+      "pts": "33",
+      "pPerGame": "3.3",
       "plusMinus": "32",
       "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675635&playerID=2166971&printPage=0",
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/stampede%2Epng"
