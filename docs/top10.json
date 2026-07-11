@@ -1,9 +1,23 @@
 {
   "sourceUrl": "https://www.nzihl.com/leagues/stats_hockey.cfm?clientid=7131&leagueid=35499&printPage=1",
-  "generatedAt": "2026-07-11T00:17:26.102Z",
+  "generatedAt": "2026-07-11T12:14:07.475Z",
   "players": [
     {
       "rank": 1,
+      "name": "Luke Stegmann",
+      "position": "D",
+      "team": "Dunedin Thunder",
+      "gp": "13",
+      "g": "17",
+      "a": "18",
+      "pts": "35",
+      "pPerGame": "2.7",
+      "plusMinus": "13",
+      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675634&playerID=2365698&printPage=0",
+      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/LukeEASPORT%2Epng"
+    },
+    {
+      "rank": 2,
       "name": "Conner Jean",
       "position": "F",
       "team": "SkyCity Stampede",
@@ -17,21 +31,21 @@
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/stampede%2Epng"
     },
     {
-      "rank": 2,
-      "name": "Luke Stegmann",
-      "position": "D",
+      "rank": 3,
+      "name": "Cole Beckstead",
+      "position": "F",
       "team": "Dunedin Thunder",
-      "gp": "12",
-      "g": "15",
-      "a": "18",
+      "gp": "13",
+      "g": "13",
+      "a": "20",
       "pts": "33",
-      "pPerGame": "2.8",
-      "plusMinus": "13",
-      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675634&playerID=2365698&printPage=0",
-      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/LukeEASPORT%2Epng"
+      "pPerGame": "2.5",
+      "plusMinus": "14",
+      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675634&playerID=2346738&printPage=0",
+      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/ColeBecksteadEASPORT2%2Epng"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "name": "Alex Gagnon",
       "position": "F",
       "team": "Red Devils",
@@ -43,20 +57,6 @@
       "plusMinus": "13",
       "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675633&playerID=2470539&printPage=0",
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/A%5FGagnon%2Ejpg"
-    },
-    {
-      "rank": 4,
-      "name": "Cole Beckstead",
-      "position": "F",
-      "team": "Dunedin Thunder",
-      "gp": "12",
-      "g": "13",
-      "a": "18",
-      "pts": "31",
-      "pPerGame": "2.6",
-      "plusMinus": "14",
-      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675634&playerID=2346738&printPage=0",
-      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/ColeBecksteadEASPORT2%2Epng"
     },
     {
       "rank": 5,
@@ -91,17 +91,31 @@
       "name": "Samuel Loiselle",
       "position": "D",
       "team": "Dunedin Thunder",
-      "gp": "11",
+      "gp": "12",
       "g": "9",
-      "a": "11",
-      "pts": "20",
+      "a": "13",
+      "pts": "22",
       "pPerGame": "1.8",
-      "plusMinus": "5",
+      "plusMinus": "3",
       "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675634&playerID=2470835&printPage=0",
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/SamEASPORT%2Epng"
     },
     {
       "rank": 8,
+      "name": "Ian Audas",
+      "position": "F",
+      "team": "Dunedin Thunder",
+      "gp": "13",
+      "g": "7",
+      "a": "14",
+      "pts": "21",
+      "pPerGame": "1.6",
+      "plusMinus": "9",
+      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675634&playerID=2012496&printPage=0",
+      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/IanEASPORT%2Epng"
+    },
+    {
+      "rank": 9,
       "name": "Max Roth",
       "position": "D",
       "team": "SkyCity Stampede",
@@ -115,7 +129,7 @@
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/stampede%2Epng"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "name": "Dylan Devlin",
       "position": "F",
       "team": "SkyCity Stampede",
@@ -127,20 +141,6 @@
       "plusMinus": "14",
       "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675635&playerID=2012888&printPage=0",
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/DylanDevlinprofile%2Ejpg"
-    },
-    {
-      "rank": 10,
-      "name": "Vadim Sevenier",
-      "position": "F",
-      "team": "Pure NZ Admirals",
-      "gp": "12",
-      "g": "6",
-      "a": "10",
-      "pts": "16",
-      "pPerGame": "1.3",
-      "plusMinus": "5",
-      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=674110&playerID=2383409&printPage=0",
-      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/VadimSevenier%2Ejpg"
     }
   ]
 }

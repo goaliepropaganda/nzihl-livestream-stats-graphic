@@ -1,21 +1,9 @@
 {
   "sourceUrl": "https://www.nzihl.com/leagues/stats_hockey.cfm?clientid=7131&leagueID=35499&divID=0&statType=goalie&showGameType=2&printPage=1",
-  "generatedAt": "2026-07-11T00:17:35.373Z",
+  "generatedAt": "2026-07-11T12:14:15.621Z",
   "goalies": [
     {
       "rank": 1,
-      "name": "Csaba Kercso-Magos",
-      "team": "Pure NZ Admirals",
-      "gp": "6",
-      "w": "5",
-      "l": "1",
-      "gaa": "2.83",
-      "svPct": ".890",
-      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=674110&playerID=1954432&printPage=0",
-      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/CsabaKercsoMagos%2Ejpg"
-    },
-    {
-      "rank": 2,
       "name": "Aston Brookes",
       "team": "SkyCity Stampede",
       "gp": "6",
@@ -25,6 +13,18 @@
       "svPct": ".910",
       "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675635&playerID=1675843&printPage=0",
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/stampede%2Epng"
+    },
+    {
+      "rank": 2,
+      "name": "Csaba Kercso-Magos",
+      "team": "Pure NZ Admirals",
+      "gp": "7",
+      "w": "6",
+      "l": "1",
+      "gaa": "3.14",
+      "svPct": ".880",
+      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=674110&playerID=1954432&printPage=0",
+      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/CsabaKercsoMagos%2Ejpg"
     },
     {
       "rank": 3,
@@ -40,18 +40,6 @@
     },
     {
       "rank": 4,
-      "name": "Toby Schuck",
-      "team": "Dunedin Thunder",
-      "gp": "8",
-      "w": "4",
-      "l": "2",
-      "gaa": "3.57",
-      "svPct": ".882",
-      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675634&playerID=2083568&printPage=0",
-      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/TobyEASPORT%2Epng"
-    },
-    {
-      "rank": 5,
       "name": "Eythan Prendergast",
       "team": "Pure NZ Admirals",
       "gp": "6",
@@ -63,7 +51,7 @@
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/EythanPrendergast%2Ejpg"
     },
     {
-      "rank": 6,
+      "rank": 5,
       "name": "Alexa Gibson",
       "team": "Botany Swarm",
       "gp": "3",
@@ -73,6 +61,18 @@
       "svPct": ".875",
       "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=674109&playerID=2198272&printPage=0",
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/AlexaGibson%2Ejpg"
+    },
+    {
+      "rank": 6,
+      "name": "Toby Schuck",
+      "team": "Dunedin Thunder",
+      "gp": "9",
+      "w": "4",
+      "l": "3",
+      "gaa": "4.13",
+      "svPct": ".864",
+      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675634&playerID=2083568&printPage=0",
+      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/TobyEASPORT%2Epng"
     },
     {
       "rank": 7,
