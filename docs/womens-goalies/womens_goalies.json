@@ -1,6 +1,6 @@
 {
   "sourceUrl": "https://www.nzwihl.com/leagues/stats_hockey.cfm?clientid=7132&leagueID=35501&divID=0&statType=goalie&showGameType=2&printPage=1",
-  "generatedAt": "2026-07-12T00:18:15.800Z",
+  "generatedAt": "2026-07-12T12:14:35.923Z",
   "goalies": [
     {
       "rank": 1,
@@ -40,6 +40,18 @@
     },
     {
       "rank": 4,
+      "name": "Zadia Paulse",
+      "team": "Wakatipu Wild",
+      "gp": "5",
+      "w": "1",
+      "l": "3",
+      "gaa": "3.82",
+      "svPct": ".909",
+      "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675639&playerID=1936932&printPage=0",
+      "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/wild%2Epng"
+    },
+    {
+      "rank": 5,
       "name": "Rosemary Lee",
       "team": "Canterbury Inferno",
       "gp": "2",
@@ -51,7 +63,7 @@
       "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/inferno%2Epng"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "name": "Alexa Gibson",
       "team": "Auckland Steel",
       "gp": "3",
@@ -63,7 +75,7 @@
       "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/AlexaGibson%2Ejpg"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "name": "Lucy Thomas",
       "team": "Dunedin Thunder Women",
       "gp": "5",
@@ -75,28 +87,16 @@
       "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/thunderW%2Epng"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "name": "Coco Cruickshank",
       "team": "Canterbury Inferno",
-      "gp": "7",
+      "gp": "8",
       "w": "2",
-      "l": "5",
-      "gaa": "4.29",
+      "l": "6",
+      "gaa": "4.13",
       "svPct": ".892",
       "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675637&playerID=2028145&printPage=0",
       "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/2026InfernoCocoCRUICKSHANK%2Ejpg"
-    },
-    {
-      "rank": 8,
-      "name": "Zadia Paulse",
-      "team": "Wakatipu Wild",
-      "gp": "4",
-      "w": "0",
-      "l": "3",
-      "gaa": "4.78",
-      "svPct": ".892",
-      "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675639&playerID=1936932&printPage=0",
-      "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/wild%2Epng"
     }
   ]
 }
