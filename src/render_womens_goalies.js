@@ -96,7 +96,7 @@ function buildSvg(payload) {
   svg += `<rect x="${PANEL.x}" y="${PANEL.y}" width="${PANEL.w}" height="${PANEL.h}" rx="${PANEL.r}" ry="${PANEL.r}" fill="#0C0E12"/>`;
 
   const titleCenterX = PANEL.x + PANEL.w / 2 + (HEADER_LOGO_WIDTH + HEADER_LOGO_GAP) / 2;
-  svg += `<text x=\"${titleCenterX}\" y=\"${topMidY + 12}\" fill=\"${COLORS.fg}\" text-anchor=\"middle\" font-size=\"40\" font-family=\"Segoe UI, Tahoma, sans-serif\" font-weight=\"700\">NZWIHL GOALIE LEADERS</text>`;
+  svg += `<text x=\"${titleCenterX}\" y=\"${topMidY + 12}\" fill=\"${COLORS.fg}\" text-anchor=\"middle\" font-size=\"40\" font-family=\"DejaVu Sans, Arial, sans-serif\" font-weight=\"700\">NZWIHL GOALIE LEADERS</text>`;
 
   svg += `<rect x=\"${PANEL.x}\" y=\"${colHeaderY}\" width=\"${PANEL.w}\" height=\"${layout.colHeaderHeight}\" fill=\"#1C1E24\"/>`;
   svg += `<line x1=\"${PANEL.x}\" y1=\"${colHeaderY + layout.colHeaderHeight}\" x2=\"${PANEL.x + PANEL.w}\" y2=\"${colHeaderY + layout.colHeaderHeight}\" stroke=\"${COLORS.grid}\" stroke-width=\"1\"/>`;
@@ -106,9 +106,9 @@ function buildSvg(payload) {
   const playerStartX = layout.leftEdge + layout.posWidth + layout.photoWidth + 10;
   const teamStartX = playerStartX + layout.playerWidth;
 
-  svg += `<text x=\"${positionCx}\" y=\"${headerMidY}\" text-anchor=\"middle\" fill=\"${COLORS.sub}\" font-size=\"22\" font-family=\"Segoe UI, Tahoma, sans-serif\" font-weight=\"700\">Position</text>`;
-  svg += `<text x=\"${playerStartX}\" y=\"${headerMidY}\" fill=\"${COLORS.sub}\" font-size=\"22\" font-family=\"Segoe UI, Tahoma, sans-serif\" font-weight=\"700\">Name</text>`;
-  svg += `<text x=\"${teamStartX}\" y=\"${headerMidY}\" fill=\"${COLORS.sub}\" font-size=\"22\" font-family=\"Segoe UI, Tahoma, sans-serif\" font-weight=\"700\">Team</text>`;
+  svg += `<text x=\"${positionCx}\" y=\"${headerMidY}\" text-anchor=\"middle\" fill=\"${COLORS.sub}\" font-size=\"22\" font-family=\"DejaVu Sans, Arial, sans-serif\" font-weight=\"700\">Position</text>`;
+  svg += `<text x=\"${playerStartX}\" y=\"${headerMidY}\" fill=\"${COLORS.sub}\" font-size=\"22\" font-family=\"DejaVu Sans, Arial, sans-serif\" font-weight=\"700\">Name</text>`;
+  svg += `<text x=\"${teamStartX}\" y=\"${headerMidY}\" fill=\"${COLORS.sub}\" font-size=\"22\" font-family=\"DejaVu Sans, Arial, sans-serif\" font-weight=\"700\">Team</text>`;
 
   for (let i = 0; i < METRIC_COLUMNS.length; i += 1) {
     const column = METRIC_COLUMNS[i];
@@ -116,7 +116,7 @@ function buildSvg(payload) {
     const isSv = column.key === "svPct";
     const color = isSv ? COLORS.accent : COLORS.sub;
     const size = isSv ? 24 : 22;
-    svg += `<text x=\"${cx}\" y=\"${headerMidY}\" text-anchor=\"middle\" fill=\"${color}\" font-size=\"${size}\" font-family=\"Segoe UI, Tahoma, sans-serif\" font-weight=\"700\">${escapeXml(column.label)}</text>`;
+    svg += `<text x=\"${cx}\" y=\"${headerMidY}\" text-anchor=\"middle\" fill=\"${color}\" font-size=\"${size}\" font-family=\"DejaVu Sans, Arial, sans-serif\" font-weight=\"700\">${escapeXml(column.label)}</text>`;
   }
 
   for (let index = 0; index < payload.goalies.length; index += 1) {
@@ -134,7 +134,7 @@ function buildSvg(payload) {
     const pillCenterX = layout.leftEdge + layout.posWidth / 2;
     const pillR = 22;
     svg += `<rect x=\"${pillCenterX - pillR}\" y=\"${cy - pillR}\" width=\"${pillR * 2}\" height=\"${pillR * 2}\" rx=\"10\" ry=\"10\" fill=\"${COLORS.pill}\"/>`;
-    svg += `<text x=\"${pillCenterX}\" y=\"${cy + 9}\" text-anchor=\"middle\" fill=\"${COLORS.fg}\" font-size=\"28\" font-family=\"Segoe UI, Tahoma, sans-serif\" font-weight=\"700\">${goalie.rank}</text>`;
+    svg += `<text x=\"${pillCenterX}\" y=\"${cy + 9}\" text-anchor=\"middle\" fill=\"${COLORS.fg}\" font-size=\"28\" font-family=\"DejaVu Sans, Arial, sans-serif\" font-weight=\"700\">${goalie.rank}</text>`;
 
     const photoX = layout.leftEdge + layout.posWidth + (layout.photoWidth - layout.photoSize) / 2;
     const photoY = cy - layout.photoSize / 2;
@@ -142,10 +142,10 @@ function buildSvg(payload) {
 
     const nameX = layout.leftEdge + layout.posWidth + layout.photoWidth + 10;
     const teamX = nameX + layout.playerWidth;
-    svg += `<text x=\"${nameX}\" y=\"${cy + 10}\" fill=\"${COLORS.fg}\" font-size=\"34\" font-family=\"Segoe UI, Tahoma, sans-serif\" font-weight=\"700\">${escapeXml(clampText(String(goalie.name || ""), 24))}</text>`;
+    svg += `<text x=\"${nameX}\" y=\"${cy + 10}\" fill=\"${COLORS.fg}\" font-size=\"34\" font-family=\"DejaVu Sans, Arial, sans-serif\" font-weight=\"700\">${escapeXml(clampText(String(goalie.name || ""), 24))}</text>`;
     const teamText = clampText(String(goalie.team || ""), 22);
     const teamFontSize = teamText.length > 18 ? 24 : 31;
-    svg += `<text x=\"${teamX}\" y=\"${cy + 9}\" fill=\"${COLORS.sub}\" font-size=\"${teamFontSize}\" font-family=\"Segoe UI, Tahoma, sans-serif\" font-weight=\"700\">${escapeXml(teamText)}</text>`;
+    svg += `<text x=\"${teamX}\" y=\"${cy + 9}\" fill=\"${COLORS.sub}\" font-size=\"${teamFontSize}\" font-family=\"DejaVu Sans, Arial, sans-serif\" font-weight=\"700\">${escapeXml(teamText)}</text>`;
 
     for (let i = 0; i < METRIC_COLUMNS.length; i += 1) {
       const column = METRIC_COLUMNS[i];
@@ -153,11 +153,11 @@ function buildSvg(payload) {
       const raw = String(goalie[column.key] ?? "");
 
       if (column.key === "svPct") {
-        svg += `<text x=\"${cx}\" y=\"${cy + 14}\" text-anchor=\"middle\" fill=\"${COLORS.accent}\" font-size=\"40\" font-family=\"Segoe UI, Tahoma, sans-serif\" font-weight=\"700\">${escapeXml(raw)}</text>`;
+        svg += `<text x=\"${cx}\" y=\"${cy + 14}\" text-anchor=\"middle\" fill=\"${COLORS.accent}\" font-size=\"40\" font-family=\"DejaVu Sans, Arial, sans-serif\" font-weight=\"700\">${escapeXml(raw)}</text>`;
         continue;
       }
 
-      svg += `<text x=\"${cx}\" y=\"${cy + 11}\" text-anchor=\"middle\" fill=\"${COLORS.fg}\" font-size=\"33\" font-family=\"Segoe UI, Tahoma, sans-serif\" font-weight=\"700\">${escapeXml(raw)}</text>`;
+      svg += `<text x=\"${cx}\" y=\"${cy + 11}\" text-anchor=\"middle\" fill=\"${COLORS.fg}\" font-size=\"33\" font-family=\"DejaVu Sans, Arial, sans-serif\" font-weight=\"700\">${escapeXml(raw)}</text>`;
     }
   }
 

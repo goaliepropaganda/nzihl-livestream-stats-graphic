@@ -151,9 +151,9 @@ function buildMetricChip(x, y, width, text, accent, subtitle = "") {
   const hasSubtitle = Boolean(subtitle);
   return [
     `<rect x="${x}" y="${y}" width="${width}" height="54" rx="16" ry="16" fill="${COLORS.chip}" stroke="${COLORS.chipLine}"/>`,
-    `<text x="${x + width / 2}" y="${hasSubtitle ? y + 24 : y + 35}" text-anchor="middle" fill="${accent}" font-size="16" font-family="Segoe UI, Tahoma, sans-serif" font-weight="700">${escapeXml(text)}</text>`,
+    `<text x="${x + width / 2}" y="${hasSubtitle ? y + 24 : y + 35}" text-anchor="middle" fill="${accent}" font-size="16" font-family="DejaVu Sans, Arial, sans-serif" font-weight="700">${escapeXml(text)}</text>`,
     hasSubtitle
-      ? `<text x="${x + width / 2}" y="${y + 42}" text-anchor="middle" fill="${COLORS.sub}" font-size="10" font-family="Segoe UI, Tahoma, sans-serif" font-weight="600">${escapeXml(subtitle)}</text>`
+      ? `<text x="${x + width / 2}" y="${y + 42}" text-anchor="middle" fill="${COLORS.sub}" font-size="10" font-family="DejaVu Sans, Arial, sans-serif" font-weight="600">${escapeXml(subtitle)}</text>`
       : ""
   ].join("");
 }
@@ -162,8 +162,8 @@ function buildSectionHeader(x, y, width, section) {
   const title = section.position === "Forward" ? "Forwards" : section.position;
   return [
     `<rect x="${x}" y="${y}" width="${width}" height="28" rx="10" ry="10" fill="rgba(255,255,255,0.04)" stroke="${COLORS.grid}"/>`,
-    `<text x="${x + 14}" y="${y + 19}" fill="${COLORS.text}" font-size="18" font-family="Segoe UI, Tahoma, sans-serif" font-weight="700">${escapeXml(title)}</text>`,
-    `<text x="${x + width - 14}" y="${y + 19}" text-anchor="end" fill="${COLORS.sub}" font-size="13" font-family="Segoe UI, Tahoma, sans-serif" font-weight="700">AVG ${formatOneDecimal(section.avgToi)} MIN</text>`
+    `<text x="${x + 14}" y="${y + 19}" fill="${COLORS.text}" font-size="18" font-family="DejaVu Sans, Arial, sans-serif" font-weight="700">${escapeXml(title)}</text>`,
+    `<text x="${x + width - 14}" y="${y + 19}" text-anchor="end" fill="${COLORS.sub}" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" font-weight="700">AVG ${formatOneDecimal(section.avgToi)} MIN</text>`
   ].join("");
 }
 
@@ -187,15 +187,15 @@ function buildPlayerRow(team, player, index, x, y, width, maxToi) {
   return [
     `<rect x="${x}" y="${rowTop}" width="${width}" height="${SECTION_ROW_HEIGHT}" rx="14" ry="14" fill="${rowFill}"/>`,
     `<rect x="${x + 22}" y="${rowMid - 15}" width="30" height="30" rx="10" ry="10" fill="${COLORS.pill}" stroke="${teamAccent}" stroke-width="1.5"/>`,
-    `<text x="${x + 37}" y="${rowMid + 7}" text-anchor="middle" fill="${COLORS.text}" font-size="18" font-family="Segoe UI, Tahoma, sans-serif" font-weight="700">${player.rank}</text>`,
-    `<text x="${x + 70}" y="${rowMid + 7}" fill="${COLORS.text}" font-size="22" font-family="Segoe UI, Tahoma, sans-serif" font-weight="700">${escapeXml(name)}</text>`,
+    `<text x="${x + 37}" y="${rowMid + 7}" text-anchor="middle" fill="${COLORS.text}" font-size="18" font-family="DejaVu Sans, Arial, sans-serif" font-weight="700">${player.rank}</text>`,
+    `<text x="${x + 70}" y="${rowMid + 7}" fill="${COLORS.text}" font-size="22" font-family="DejaVu Sans, Arial, sans-serif" font-weight="700">${escapeXml(name)}</text>`,
     `<rect x="${x + 320}" y="${rowMid - 10}" width="170" height="20" rx="10" ry="10" fill="${COLORS.toiTrack}"/>`,
     `<rect x="${x + 320}" y="${rowMid - 10}" width="${toiWidth}" height="20" rx="10" ry="10" fill="${COLORS.toiFill}"/>`,
-    `<text x="${x + 405}" y="${rowMid + 4}" text-anchor="middle" fill="#F8FAFC" font-size="13" font-family="Segoe UI, Tahoma, sans-serif" font-weight="700">${formatOneDecimal(player.avgToi)} MIN</text>`,
+    `<text x="${x + 405}" y="${rowMid + 4}" text-anchor="middle" fill="#F8FAFC" font-size="15" font-family="DejaVu Sans, Arial, sans-serif" font-weight="700">${formatOneDecimal(player.avgToi)} MIN</text>`,
     `<rect x="${shiftsBadgeX}" y="${rowMid - 15}" width="${shiftsBadgeWidth}" height="30" rx="12" ry="12" fill="#182234" stroke="rgba(255,255,255,0.1)"/>`,
-    `<text x="${shiftsBadgeX + shiftsBadgeWidth / 2}" y="${rowMid + 6}" text-anchor="middle" fill="${COLORS.text}" font-size="13" font-family="Segoe UI, Tahoma, sans-serif" font-weight="700">${shiftValue.toFixed(0)} Shifts/Game</text>`,
+    `<text x="${shiftsBadgeX + shiftsBadgeWidth / 2}" y="${rowMid + 6}" text-anchor="middle" fill="${COLORS.text}" font-size="15" font-family="DejaVu Sans, Arial, sans-serif" font-weight="700">${shiftValue.toFixed(0)} Shifts/Game</text>`,
     `<rect x="${secsBadgeX}" y="${rowMid - 15}" width="${secsBadgeWidth}" height="30" rx="12" ry="12" fill="#221B12" stroke="rgba(255,255,255,0.1)"/>`,
-    `<text x="${secsBadgeX + secsBadgeWidth / 2}" y="${rowMid + 6}" text-anchor="middle" fill="${COLORS.accent}" font-size="14" font-family="Segoe UI, Tahoma, sans-serif" font-weight="700">${Math.ceil(medianValue)} Secs</text>`
+    `<text x="${secsBadgeX + secsBadgeWidth / 2}" y="${rowMid + 6}" text-anchor="middle" fill="${COLORS.accent}" font-size="15" font-family="DejaVu Sans, Arial, sans-serif" font-weight="700">${Math.ceil(medianValue)} Secs</text>`
   ].join("");
 }
 
@@ -204,32 +204,28 @@ function buildTeamCard(team, teamIndex, x, y, width, height, maxToi) {
   const innerX = x + 26;
   const innerWidth = width - 52;
   const sectionTop = y + 130;
-  const summaryY = y + 16;
+  const summaryY = y + 56;
   const chipGap = 12;
-  const chip1Width = 164;
-  const chip2Width = 180;
-  const chip3Width = 156;
-  const chipsTotalWidth = chip1Width + chip2Width + chip3Width + chipGap * 2;
-  const chipsStartX = x + width - 26 - chipsTotalWidth;
+  const chipWidth = (innerWidth - chipGap * 2) / 3;
+  const chipsStartX = innerX;
 
   let svg = "";
   svg += `<rect x="${x}" y="${y}" width="${width}" height="${height}" rx="24" ry="24" fill="${teamIndex === 0 ? COLORS.panel : COLORS.panelAlt}" stroke="${COLORS.line}"/>`;
-  svg += `<text x="${innerX}" y="${y + 42}" fill="${COLORS.text}" font-size="30" font-family="Segoe UI, Tahoma, sans-serif" font-weight="700">${escapeXml(team.name)}</text>`;
-  svg += `<text x="${innerX}" y="${y + 66}" fill="${COLORS.sub}" font-size="15" font-family="Segoe UI, Tahoma, sans-serif" font-weight="600">Forward and defence workload profile</text>`;
+  svg += `<text x="${x + width / 2}" y="${y + 34}" text-anchor="middle" fill="${COLORS.text}" font-size="30" font-family="DejaVu Sans, Arial, sans-serif" font-weight="700">${escapeXml(team.name)}</text>`;
 
   svg += buildMetricChip(
     chipsStartX,
     summaryY,
-    chip1Width,
+    chipWidth,
     `${formatOneDecimal(team.avgToi)} MIN`,
     accent.main,
     "Avg. TOI per player"
   );
-  svg += buildMetricChip(chipsStartX + chip1Width + chipGap, summaryY, chip2Width, `${Math.round(team.avgShifts)} Shifts/Game`, COLORS.text);
+  svg += buildMetricChip(chipsStartX + chipWidth + chipGap, summaryY, chipWidth, `${Math.round(team.avgShifts)} Shifts/Game`, COLORS.text);
   svg += buildMetricChip(
-    chipsStartX + chip1Width + chip2Width + chipGap * 2,
+    chipsStartX + chipWidth * 2 + chipGap * 2,
     summaryY,
-    chip3Width,
+    chipWidth,
     `${Math.ceil(team.avgMedianShift)} Secs`,
     COLORS.accent,
     "Avg. shift length per player"
@@ -271,7 +267,7 @@ function buildSvg(payload) {
   svg += `<rect x="${PANEL.x}" y="${PANEL.y}" width="${PANEL.w}" height="${PANEL.h}" rx="${PANEL.r}" ry="${PANEL.r}" fill="rgba(7, 11, 17, 0.72)" stroke="rgba(255,255,255,0.08)"/>`;
   svg += `<line x1="${PANEL.x + PANEL.w / 2}" y1="${cardY - 12}" x2="${PANEL.x + PANEL.w / 2}" y2="${PANEL.y + PANEL.h - 34}" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>`;
 
-  svg += `<text x="${PANEL.x + PANEL.w / 2}" y="${topMidY + 20}" fill="${COLORS.text}" text-anchor="middle" font-size="40" font-family="Segoe UI, Tahoma, sans-serif" font-weight="700">NZIHL TEAM COMPARISON</text>`;
+  svg += `<text x="${PANEL.x + PANEL.w / 2}" y="${topMidY + 20}" fill="${COLORS.text}" text-anchor="middle" font-size="40" font-family="DejaVu Sans, Arial, sans-serif" font-weight="700">NZIHL TEAM COMPARISON</text>`;
 
   svg += buildTeamCard(payload.teams[0], 0, leftCardX, cardY, teamWidth, cardHeight, payload.maxToi);
   svg += buildTeamCard(payload.teams[1], 1, rightCardX, cardY, teamWidth, cardHeight, payload.maxToi);
