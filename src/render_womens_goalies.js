@@ -142,7 +142,8 @@ function buildSvg(payload) {
 
     const nameX = layout.leftEdge + layout.posWidth + layout.photoWidth + 10;
     const teamX = nameX + layout.playerWidth;
-    svg += `<text x=\"${nameX}\" y=\"${cy + 10}\" fill=\"${COLORS.fg}\" font-size=\"34\" font-family=\"DejaVu Sans, Arial, sans-serif\" font-weight=\"700\">${escapeXml(clampText(String(goalie.name || ""), 24))}</text>`;
+    const nameText = String(goalie.name || "").trim();
+    svg += `<text x=\"${nameX}\" y=\"${cy + 10}\" fill=\"${COLORS.fg}\" font-size=\"34\" font-family=\"DejaVu Sans, Arial, sans-serif\" font-weight=\"700\" textLength=\"${layout.playerWidth - 16}\" lengthAdjust=\"spacingAndGlyphs\">${escapeXml(nameText)}</text>`;
     const teamText = clampText(String(goalie.team || ""), 22);
     const teamFontSize = teamText.length > 18 ? 24 : 31;
     svg += `<text x=\"${teamX}\" y=\"${cy + 9}\" fill=\"${COLORS.sub}\" font-size=\"${teamFontSize}\" font-family=\"DejaVu Sans, Arial, sans-serif\" font-weight=\"700\">${escapeXml(teamText)}</text>`;

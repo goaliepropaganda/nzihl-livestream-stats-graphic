@@ -140,7 +140,8 @@ function buildSvg(payload) {
 
     const nameX = layout.leftEdge + layout.posWidth + layout.photoWidth + 10;
     const teamX = nameX + layout.playerWidth;
-    svg += `<text x=\"${nameX}\" y=\"${cy + 10}\" fill=\"${COLORS.fg}\" font-size=\"34\" font-family=\"DejaVu Sans, Arial, sans-serif\" font-weight=\"700\">${escapeXml(clampText(String(player.name || ""), 24))}</text>`;
+    const nameText = String(player.name || "").trim();
+    svg += `<text x=\"${nameX}\" y=\"${cy + 10}\" fill=\"${COLORS.fg}\" font-size=\"34\" font-family=\"DejaVu Sans, Arial, sans-serif\" font-weight=\"700\" textLength=\"${layout.playerWidth - 16}\" lengthAdjust=\"spacingAndGlyphs\">${escapeXml(nameText)}</text>`;
     svg += `<text x=\"${teamX}\" y=\"${cy + 9}\" fill=\"${COLORS.sub}\" font-size=\"31\" font-family=\"DejaVu Sans, Arial, sans-serif\" font-weight=\"700\">${escapeXml(clampText(String(player.team || ""), 22))}</text>`;
 
     for (let i = 0; i < METRIC_COLUMNS.length; i += 1) {
