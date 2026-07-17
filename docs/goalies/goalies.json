@@ -1,6 +1,6 @@
 {
   "sourceUrl": "https://www.nzihl.com/leagues/stats_hockey.cfm?clientid=7131&leagueID=35499&divID=0&statType=goalie&showGameType=2&printPage=1",
-  "generatedAt": "2026-07-17T03:08:39.906Z",
+  "generatedAt": "2026-07-17T12:22:16.267Z",
   "goalies": [
     {
       "rank": 1,
@@ -88,30 +88,18 @@
     },
     {
       "rank": 8,
-      "name": "Grace Harrison",
-      "team": "Botany Swarm",
-      "gp": "2",
-      "w": "0",
-      "l": "1",
-      "gaa": "4.36",
-      "svPct": ".809",
-      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=674109&playerID=1954595&printPage=0",
-      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/swarm%2Epng"
-    },
-    {
-      "rank": 9,
       "name": "Connor Parr",
       "team": "Botany Swarm",
-      "gp": "7",
+      "gp": "8",
       "w": "2",
-      "l": "4",
-      "gaa": "4.50",
-      "svPct": ".880",
+      "l": "5",
+      "gaa": "4.37",
+      "svPct": ".882",
       "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=674109&playerID=2067513&printPage=0",
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/ConnorParr1%2Ejpg"
     },
     {
-      "rank": 10,
+      "rank": 9,
       "name": "Niall Fanning",
       "team": "Red Devils",
       "gp": "2",
@@ -121,6 +109,18 @@
       "svPct": ".894",
       "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675633&playerID=1955690&printPage=0",
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/N%5FFanning%2Ejpg"
+    },
+    {
+      "rank": 10,
+      "name": "James Moore",
+      "team": "Dunedin Thunder",
+      "gp": "8",
+      "w": "4",
+      "l": "2",
+      "gaa": "4.93",
+      "svPct": ".844",
+      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675634&playerID=2015543&printPage=0",
+      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/JamesEASPORT%2Epng"
     }
   ]
 }
