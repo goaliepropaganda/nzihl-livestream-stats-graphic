@@ -28,6 +28,72 @@ export function clampText(value, maxLength) {
   return `${value.slice(0, Math.max(0, maxLength - 1))}…`;
 }
 
+export function estimateTextWidth(value, fontSize = 16) {
+  const text = String(value || "");
+  let units = 0;
+
+  for (const ch of text) {
+    if (ch === " ") {
+      units += 0.32;
+      continue;
+    }
+
+    if ("ilI|!'.,:;`".includes(ch)) {
+      units += 0.28;
+      continue;
+    }
+
+    if ("mwMW@%#&QO".includes(ch)) {
+      units += 0.86;
+      continue;
+    }
+
+    if ("-_/()[]{}".includes(ch)) {
+      units += 0.4;
+      continue;
+    }
+
+    units += 0.58;
+  }
+
+  return units * fontSize;
+}
+
+export function fitTextForWidth(value, maxWidth, options = {}) {
+  const {
+    fontSize = 16,
+    minFontSize = 12
+  } = options;
+
+  const text = String(value || "").trim();
+  if (!text) {
+    return { text: "", fontSize };
+  }
+
+  let fittedSize = fontSize;
+  let fittedText = text;
+  let estimatedWidth = estimateTextWidth(fittedText, fittedSize);
+
+  if (estimatedWidth > maxWidth) {
+    const scaled = Math.floor((fontSize * (maxWidth / estimatedWidth)) * 10) / 10;
+    fittedSize = Math.max(minFontSize, scaled);
+    estimatedWidth = estimateTextWidth(fittedText, fittedSize);
+  }
+
+  if (estimatedWidth <= maxWidth) {
+    return { text: fittedText, fontSize: fittedSize };
+  }
+
+  while (fittedText.length > 1) {
+    fittedText = `${fittedText.slice(0, -1).trimEnd()}…`;
+    if (estimateTextWidth(fittedText, fittedSize) <= maxWidth) {
+      return { text: fittedText, fontSize: fittedSize };
+    }
+  }
+
+  return { text: "…", fontSize: fittedSize };
+}
+
 function hashRunMarker(value) {
   const text = String(value || "");
   let hash = 2166136261;

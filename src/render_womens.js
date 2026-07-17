@@ -4,7 +4,7 @@ import { Jimp } from "jimp";
 import { readFile, writeFile } from "node:fs/promises";
 import { pathToFileURL } from "node:url";
 import { OUTPUT_DIR, REQUEST_HEADERS, WOMENS_DATA_FILE, WOMENS_IMAGE_FILE } from "./config.js";
-import { applyInvisibleRunMarker, clampText, ensureDir, escapeXml } from "./utils.js";
+import { applyInvisibleRunMarker, clampText, ensureDir, escapeXml, fitTextForWidth } from "./utils.js";
 
 const WIDTH = 1920;
 const HEIGHT = 1080;
@@ -138,7 +138,8 @@ function buildSvg(payload) {
     const nameX = layout.leftEdge + layout.posWidth + layout.photoWidth + 10;
     const teamX = nameX + layout.playerWidth;
     const nameText = String(player.name || "").trim();
-    svg += `<text x=\"${nameX}\" y=\"${cy + 10}\" fill=\"${COLORS.fg}\" font-size=\"34\" font-family=\"DejaVu Sans, Arial, sans-serif\" font-weight=\"700\" textLength=\"${layout.playerWidth - 16}\" lengthAdjust=\"spacingAndGlyphs\">${escapeXml(nameText)}</text>`;
+    const fittedName = fitTextForWidth(nameText, layout.playerWidth - 16, { fontSize: 34, minFontSize: 24 });
+    svg += `<text x=\"${nameX}\" y=\"${cy + 10}\" fill=\"${COLORS.fg}\" font-size=\"${fittedName.fontSize}\" font-family=\"DejaVu Sans, Arial, sans-serif\" font-weight=\"700\">${escapeXml(fittedName.text)}</text>`;
     const teamText = clampText(String(player.team || ""), 22);
     const teamFontSize = teamText.length > 18 ? 24 : 31;
     svg += `<text x=\"${teamX}\" y=\"${cy + 9}\" fill=\"${COLORS.sub}\" font-size=\"${teamFontSize}\" font-family=\"DejaVu Sans, Arial, sans-serif\" font-weight=\"700\">${escapeXml(teamText)}</text>`;
