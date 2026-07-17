@@ -86,10 +86,14 @@ function buildSvg(payload) {
   const layout = getLayout(payload.players.length);
   const colHeaderY = PANEL.y + layout.topStripHeight;
   const topMidY = PANEL.y + Math.floor(layout.topStripHeight / 2);
+  const nameX = layout.leftEdge + layout.posWidth + layout.photoWidth + 10;
+  const nameClipWidth = layout.playerWidth - 14;
+  const nameClipHeight = Math.max(0, layout.rowHeight * payload.players.length - 2);
 
   let svg = "";
   svg += `<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"${WIDTH}\" height=\"${HEIGHT}\" viewBox=\"0 0 ${WIDTH} ${HEIGHT}\">`;
   svg += "<defs>";
+  svg += `<clipPath id=\"nameColClip\"><rect x=\"${nameX}\" y=\"${layout.rowsTop + 1}\" width=\"${nameClipWidth}\" height=\"${nameClipHeight}\"/></clipPath>`;
   svg += "</defs>";
 
   svg += `<rect x="${PANEL.x}" y="${PANEL.y}" width="${PANEL.w}" height="${PANEL.h}" rx="${PANEL.r}" ry="${PANEL.r}" fill="#0C0E12"/>`;
@@ -135,11 +139,10 @@ function buildSvg(payload) {
     const photoY = cy - layout.photoSize / 2;
     svg += `<rect x=\"${photoX}\" y=\"${photoY}\" width=\"${layout.photoSize}\" height=\"${layout.photoSize}\" rx=\"${layout.photoSize / 2}\" ry=\"${layout.photoSize / 2}\" fill=\"#253243\"/>`;
 
-    const nameX = layout.leftEdge + layout.posWidth + layout.photoWidth + 10;
     const teamX = nameX + layout.playerWidth;
     const nameText = String(player.name || "").trim();
     const fittedName = fitTextForWidth(nameText, layout.playerWidth - 16, { fontSize: 34, minFontSize: 24 });
-    svg += `<text x=\"${nameX}\" y=\"${cy + 10}\" fill=\"${COLORS.fg}\" font-size=\"${fittedName.fontSize}\" font-family=\"DejaVu Sans, Arial, sans-serif\" font-weight=\"700\">${escapeXml(fittedName.text)}</text>`;
+    svg += `<text x=\"${nameX}\" y=\"${cy + 10}\" fill=\"${COLORS.fg}\" font-size=\"${fittedName.fontSize}\" font-family=\"DejaVu Sans, Arial, sans-serif\" font-weight=\"700\" clip-path=\"url(#nameColClip)\">${escapeXml(fittedName.text)}</text>`;
     const teamText = clampText(String(player.team || ""), 22);
     const teamFontSize = teamText.length > 18 ? 24 : 31;
     svg += `<text x=\"${teamX}\" y=\"${cy + 9}\" fill=\"${COLORS.sub}\" font-size=\"${teamFontSize}\" font-family=\"DejaVu Sans, Arial, sans-serif\" font-weight=\"700\">${escapeXml(teamText)}</text>`;
