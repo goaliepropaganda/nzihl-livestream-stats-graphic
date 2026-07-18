@@ -1,16 +1,16 @@
 {
   "sourceUrl": "https://www.nzwihl.com/leagues/stats_hockey.cfm?clientid=7132&leagueID=35501&divID=0&statType=goalie&showGameType=2&printPage=1",
-  "generatedAt": "2026-07-18T00:17:02.492Z",
+  "generatedAt": "2026-07-18T12:14:28.738Z",
   "goalies": [
     {
       "rank": 1,
       "name": "Lochlyn Henry",
       "team": "Auckland Steel",
-      "gp": "4",
-      "w": "4",
+      "gp": "5",
+      "w": "5",
       "l": "0",
-      "gaa": "1.00",
-      "svPct": ".949",
+      "gaa": "1.40",
+      "svPct": ".929",
       "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675636&playerID=1938223&printPage=0",
       "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/LochlynHenry%2Ejpg"
     },

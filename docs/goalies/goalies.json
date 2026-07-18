@@ -1,21 +1,9 @@
 {
   "sourceUrl": "https://www.nzihl.com/leagues/stats_hockey.cfm?clientid=7131&leagueID=35499&divID=0&statType=goalie&showGameType=2&printPage=1",
-  "generatedAt": "2026-07-18T00:16:54.691Z",
+  "generatedAt": "2026-07-18T12:14:16.329Z",
   "goalies": [
     {
       "rank": 1,
-      "name": "Aston Brookes",
-      "team": "SkyCity Stampede",
-      "gp": "6",
-      "w": "4",
-      "l": "2",
-      "gaa": "3.14",
-      "svPct": ".910",
-      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675635&playerID=1675843&printPage=0",
-      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/stampede%2Epng"
-    },
-    {
-      "rank": 2,
       "name": "Csaba Kercso-Magos",
       "team": "Pure NZ Admirals",
       "gp": "7",
@@ -27,7 +15,7 @@
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/CsabaKercsoMagos%2Ejpg"
     },
     {
-      "rank": 3,
+      "rank": 2,
       "name": "Joel Gerard",
       "team": "SkyCity Stampede",
       "gp": "6",
@@ -37,6 +25,18 @@
       "svPct": ".901",
       "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675635&playerID=2011941&printPage=0",
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/JoelGerard%2Ejpg"
+    },
+    {
+      "rank": 3,
+      "name": "Aston Brookes",
+      "team": "SkyCity Stampede",
+      "gp": "7",
+      "w": "4",
+      "l": "3",
+      "gaa": "3.55",
+      "svPct": ".898",
+      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675635&playerID=1675843&printPage=0",
+      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/stampede%2Epng"
     },
     {
       "rank": 4,
@@ -66,11 +66,11 @@
       "rank": 6,
       "name": "Toby Schuck",
       "team": "Dunedin Thunder",
-      "gp": "9",
-      "w": "4",
+      "gp": "10",
+      "w": "5",
       "l": "3",
-      "gaa": "4.13",
-      "svPct": ".864",
+      "gaa": "4.00",
+      "svPct": ".870",
       "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675634&playerID=2083568&printPage=0",
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/TobyEASPORT%2Epng"
     },
@@ -88,18 +88,6 @@
     },
     {
       "rank": 8,
-      "name": "Connor Parr",
-      "team": "Botany Swarm",
-      "gp": "8",
-      "w": "2",
-      "l": "5",
-      "gaa": "4.37",
-      "svPct": ".882",
-      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=674109&playerID=2067513&printPage=0",
-      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/ConnorParr1%2Ejpg"
-    },
-    {
-      "rank": 9,
       "name": "Niall Fanning",
       "team": "Red Devils",
       "gp": "2",
@@ -109,6 +97,18 @@
       "svPct": ".894",
       "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675633&playerID=1955690&printPage=0",
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/N%5FFanning%2Ejpg"
+    },
+    {
+      "rank": 9,
+      "name": "Connor Parr",
+      "team": "Botany Swarm",
+      "gp": "9",
+      "w": "2",
+      "l": "6",
+      "gaa": "4.93",
+      "svPct": ".869",
+      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=674109&playerID=2067513&printPage=0",
+      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/ConnorParr1%2Ejpg"
     },
     {
       "rank": 10,
