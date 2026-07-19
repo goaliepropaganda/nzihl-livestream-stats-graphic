@@ -1,9 +1,21 @@
 {
   "sourceUrl": "https://www.nzihl.com/leagues/stats_hockey.cfm?clientid=7131&leagueID=35499&divID=0&statType=goalie&showGameType=2&printPage=1",
-  "generatedAt": "2026-07-19T00:17:16.491Z",
+  "generatedAt": "2026-07-19T12:14:03.502Z",
   "goalies": [
     {
       "rank": 1,
+      "name": "Joel Gerard",
+      "team": "SkyCity Stampede",
+      "gp": "7",
+      "w": "7",
+      "l": "0",
+      "gaa": "3.13",
+      "svPct": ".901",
+      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675635&playerID=2011941&printPage=0",
+      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/JoelGerard%2Ejpg"
+    },
+    {
+      "rank": 2,
       "name": "Csaba Kercso-Magos",
       "team": "Pure NZ Admirals",
       "gp": "7",
@@ -13,18 +25,6 @@
       "svPct": ".880",
       "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=674110&playerID=1954432&printPage=0",
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/CsabaKercsoMagos%2Ejpg"
-    },
-    {
-      "rank": 2,
-      "name": "Joel Gerard",
-      "team": "SkyCity Stampede",
-      "gp": "6",
-      "w": "6",
-      "l": "0",
-      "gaa": "3.16",
-      "svPct": ".901",
-      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675635&playerID=2011941&printPage=0",
-      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/JoelGerard%2Ejpg"
     },
     {
       "rank": 3,
@@ -76,18 +76,6 @@
     },
     {
       "rank": 7,
-      "name": "Daniel Reason",
-      "team": "Red Devils",
-      "gp": "4",
-      "w": "2",
-      "l": "2",
-      "gaa": "4.27",
-      "svPct": ".876",
-      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675633&playerID=1998206&printPage=0",
-      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/Dan%2Ejpg"
-    },
-    {
-      "rank": 8,
       "name": "Niall Fanning",
       "team": "Red Devils",
       "gp": "2",
@@ -99,7 +87,7 @@
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/N%5FFanning%2Ejpg"
     },
     {
-      "rank": 9,
+      "rank": 8,
       "name": "Connor Parr",
       "team": "Botany Swarm",
       "gp": "9",
@@ -111,7 +99,7 @@
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/ConnorParr1%2Ejpg"
     },
     {
-      "rank": 10,
+      "rank": 9,
       "name": "James Moore",
       "team": "Dunedin Thunder",
       "gp": "8",
@@ -121,6 +109,18 @@
       "svPct": ".844",
       "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675634&playerID=2015543&printPage=0",
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/JamesEASPORT%2Epng"
+    },
+    {
+      "rank": 10,
+      "name": "Daniel Reason",
+      "team": "Red Devils",
+      "gp": "5",
+      "w": "2",
+      "l": "3",
+      "gaa": "5.02",
+      "svPct": ".866",
+      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675633&playerID=1998206&printPage=0",
+      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/Dan%2Ejpg"
     }
   ]
 }
