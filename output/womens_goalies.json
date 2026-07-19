@@ -1,6 +1,6 @@
 {
   "sourceUrl": "https://www.nzwihl.com/leagues/stats_hockey.cfm?clientid=7132&leagueID=35501&divID=0&statType=goalie&showGameType=2&printPage=1",
-  "generatedAt": "2026-07-18T12:14:28.738Z",
+  "generatedAt": "2026-07-19T00:17:23.818Z",
   "goalies": [
     {
       "rank": 1,
@@ -90,11 +90,11 @@
       "rank": 8,
       "name": "Coco Cruickshank",
       "team": "Canterbury Inferno",
-      "gp": "8",
+      "gp": "9",
       "w": "2",
-      "l": "6",
-      "gaa": "4.13",
-      "svPct": ".892",
+      "l": "7",
+      "gaa": "4.33",
+      "svPct": ".884",
       "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675637&playerID=2028145&printPage=0",
       "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/2026InfernoCocoCRUICKSHANK%2Ejpg"
     }
