@@ -1,6 +1,6 @@
 {
   "sourceUrl": "https://www.nzihl.com/leagues/stats_hockey.cfm?clientid=7131&leagueid=35499&printPage=1",
-  "generatedAt": "2026-07-22T00:17:03.606Z",
+  "generatedAt": "2026-07-22T12:28:47.318Z",
   "players": [
     {
       "rank": 1,
@@ -107,9 +107,9 @@
       "team": "Dunedin Thunder",
       "gp": "16",
       "g": "10",
-      "a": "17",
-      "pts": "27",
-      "pPerGame": "1.7",
+      "a": "18",
+      "pts": "28",
+      "pPerGame": "1.8",
       "plusMinus": "15",
       "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675634&playerID=2012496&printPage=0",
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/IanEASPORT%2Epng"
