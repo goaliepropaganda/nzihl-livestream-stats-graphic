@@ -1,6 +1,6 @@
 {
   "sourceUrl": "https://www.nzihl.com/leagues/stats_hockey.cfm?clientid=7131&leagueid=35499&printPage=1",
-  "generatedAt": "2026-07-23T00:18:54.582Z",
+  "generatedAt": "2026-07-23T12:28:10.476Z",
   "players": [
     {
       "rank": 1,
@@ -50,30 +50,16 @@
       "position": "F",
       "team": "SkyCity Stampede",
       "gp": "12",
-      "g": "20",
-      "a": "17",
-      "pts": "37",
-      "pPerGame": "3.1",
+      "g": "19",
+      "a": "19",
+      "pts": "38",
+      "pPerGame": "3.2",
       "plusMinus": "39",
       "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675635&playerID=2166971&printPage=0",
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/stampede%2Epng"
     },
     {
       "rank": 5,
-      "name": "Lachlan Frear",
-      "position": "F",
-      "team": "SkyCity Stampede",
-      "gp": "14",
-      "g": "11",
-      "a": "21",
-      "pts": "32",
-      "pPerGame": "2.3",
-      "plusMinus": "35",
-      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675635&playerID=2070139&printPage=0",
-      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/LachlanFrear%2Ejpg"
-    },
-    {
-      "rank": 6,
       "name": "Fabian Hast",
       "position": "F",
       "team": "Red Devils",
@@ -85,6 +71,20 @@
       "plusMinus": "19",
       "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675633&playerID=2470536&printPage=0",
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/reddevils%2Epng"
+    },
+    {
+      "rank": 6,
+      "name": "Lachlan Frear",
+      "position": "F",
+      "team": "SkyCity Stampede",
+      "gp": "14",
+      "g": "11",
+      "a": "20",
+      "pts": "31",
+      "pPerGame": "2.2",
+      "plusMinus": "35",
+      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675635&playerID=2070139&printPage=0",
+      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/LachlanFrear%2Ejpg"
     },
     {
       "rank": 7,
@@ -121,8 +121,8 @@
       "team": "SkyCity Stampede",
       "gp": "14",
       "g": "8",
-      "a": "14",
-      "pts": "22",
+      "a": "15",
+      "pts": "23",
       "pPerGame": "1.6",
       "plusMinus": "20",
       "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675635&playerID=2169088&printPage=0",
@@ -130,17 +130,17 @@
     },
     {
       "rank": 10,
-      "name": "Michael Morrissey",
+      "name": "Dylan Devlin",
       "position": "F",
-      "team": "Red Devils",
-      "gp": "12",
-      "g": "10",
-      "a": "9",
-      "pts": "19",
-      "pPerGame": "1.6",
-      "plusMinus": "10",
-      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675633&playerID=2475233&printPage=0",
-      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/M%5FMorriessy%2Ejpg"
+      "team": "SkyCity Stampede",
+      "gp": "13",
+      "g": "6",
+      "a": "14",
+      "pts": "20",
+      "pPerGame": "1.5",
+      "plusMinus": "16",
+      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675635&playerID=2012888&printPage=0",
+      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/DylanDevlinprofile%2Ejpg"
     }
   ]
 }
