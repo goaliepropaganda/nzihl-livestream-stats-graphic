@@ -1,9 +1,23 @@
 {
   "sourceUrl": "https://www.nzihl.com/leagues/stats_hockey.cfm?clientid=7131&leagueid=35499&printPage=1",
-  "generatedAt": "2026-07-24T00:17:32.888Z",
+  "generatedAt": "2026-07-24T12:25:39.461Z",
   "players": [
     {
       "rank": 1,
+      "name": "Conner Jean",
+      "position": "F",
+      "team": "SkyCity Stampede",
+      "gp": "13",
+      "g": "22",
+      "a": "21",
+      "pts": "43",
+      "pPerGame": "3.3",
+      "plusMinus": "46",
+      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675635&playerID=2166971&printPage=0",
+      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/stampede%2Epng"
+    },
+    {
+      "rank": 2,
       "name": "Luke Stegmann",
       "position": "D",
       "team": "Dunedin Thunder",
@@ -17,7 +31,7 @@
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/LukeEASPORT%2Epng"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "name": "Cole Beckstead",
       "position": "F",
       "team": "Dunedin Thunder",
@@ -31,7 +45,7 @@
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/ColeBecksteadEASPORT2%2Epng"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "name": "Alex Gagnon",
       "position": "F",
       "team": "Red Devils",
@@ -45,21 +59,21 @@
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/A%5FGagnon%2Ejpg"
     },
     {
-      "rank": 4,
-      "name": "Conner Jean",
+      "rank": 5,
+      "name": "Lachlan Frear",
       "position": "F",
       "team": "SkyCity Stampede",
-      "gp": "12",
-      "g": "19",
-      "a": "19",
-      "pts": "38",
-      "pPerGame": "3.2",
-      "plusMinus": "39",
-      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675635&playerID=2166971&printPage=0",
-      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/stampede%2Epng"
+      "gp": "15",
+      "g": "13",
+      "a": "22",
+      "pts": "35",
+      "pPerGame": "2.3",
+      "plusMinus": "41",
+      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675635&playerID=2070139&printPage=0",
+      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/LachlanFrear%2Ejpg"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "name": "Fabian Hast",
       "position": "F",
       "team": "Red Devils",
@@ -71,20 +85,6 @@
       "plusMinus": "19",
       "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675633&playerID=2470536&printPage=0",
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/reddevils%2Epng"
-    },
-    {
-      "rank": 6,
-      "name": "Lachlan Frear",
-      "position": "F",
-      "team": "SkyCity Stampede",
-      "gp": "14",
-      "g": "11",
-      "a": "20",
-      "pts": "31",
-      "pPerGame": "2.2",
-      "plusMinus": "35",
-      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675635&playerID=2070139&printPage=0",
-      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/LachlanFrear%2Ejpg"
     },
     {
       "rank": 7,
@@ -119,12 +119,12 @@
       "name": "Max Roth",
       "position": "D",
       "team": "SkyCity Stampede",
-      "gp": "14",
+      "gp": "15",
       "g": "8",
-      "a": "15",
-      "pts": "23",
-      "pPerGame": "1.6",
-      "plusMinus": "20",
+      "a": "17",
+      "pts": "25",
+      "pPerGame": "1.7",
+      "plusMinus": "26",
       "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675635&playerID=2169088&printPage=0",
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/stampede%2Epng"
     },
@@ -133,12 +133,12 @@
       "name": "Dylan Devlin",
       "position": "F",
       "team": "SkyCity Stampede",
-      "gp": "13",
+      "gp": "14",
       "g": "6",
-      "a": "14",
-      "pts": "20",
-      "pPerGame": "1.5",
-      "plusMinus": "16",
+      "a": "16",
+      "pts": "22",
+      "pPerGame": "1.6",
+      "plusMinus": "22",
       "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675635&playerID=2012888&printPage=0",
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/DylanDevlinprofile%2Ejpg"
     }

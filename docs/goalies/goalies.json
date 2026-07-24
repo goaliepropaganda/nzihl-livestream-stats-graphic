@@ -1,16 +1,16 @@
 {
   "sourceUrl": "https://www.nzihl.com/leagues/stats_hockey.cfm?clientid=7131&leagueID=35499&divID=0&statType=goalie&showGameType=2&printPage=1",
-  "generatedAt": "2026-07-24T00:17:40.328Z",
+  "generatedAt": "2026-07-24T12:25:44.876Z",
   "goalies": [
     {
       "rank": 1,
       "name": "Joel Gerard",
       "team": "SkyCity Stampede",
-      "gp": "7",
-      "w": "7",
+      "gp": "8",
+      "w": "8",
       "l": "0",
-      "gaa": "3.13",
-      "svPct": ".901",
+      "gaa": "2.87",
+      "svPct": ".912",
       "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675635&playerID=2011941&printPage=0",
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/JoelGerard%2Ejpg"
     },
@@ -40,18 +40,6 @@
     },
     {
       "rank": 4,
-      "name": "Eythan Prendergast",
-      "team": "Pure NZ Admirals",
-      "gp": "6",
-      "w": "2",
-      "l": "4",
-      "gaa": "3.98",
-      "svPct": ".890",
-      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=674110&playerID=2266108&printPage=0",
-      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/EythanPrendergast%2Ejpg"
-    },
-    {
-      "rank": 5,
       "name": "Alexa Gibson",
       "team": "Botany Swarm",
       "gp": "3",
@@ -63,7 +51,7 @@
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/AlexaGibson%2Ejpg"
     },
     {
-      "rank": 6,
+      "rank": 5,
       "name": "Toby Schuck",
       "team": "Dunedin Thunder",
       "gp": "10",
@@ -73,6 +61,18 @@
       "svPct": ".870",
       "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675634&playerID=2083568&printPage=0",
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/TobyEASPORT%2Epng"
+    },
+    {
+      "rank": 6,
+      "name": "Eythan Prendergast",
+      "team": "Pure NZ Admirals",
+      "gp": "7",
+      "w": "2",
+      "l": "5",
+      "gaa": "4.55",
+      "svPct": ".876",
+      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=674110&playerID=2266108&printPage=0",
+      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/EythanPrendergast%2Ejpg"
     },
     {
       "rank": 7,
