@@ -1,16 +1,16 @@
 {
   "sourceUrl": "https://www.nzwihl.com/leagues/stats_hockey.cfm?clientid=7132&leagueID=35501&divID=0&statType=goalie&showGameType=2&printPage=1",
-  "generatedAt": "2026-07-25T00:20:20.254Z",
+  "generatedAt": "2026-07-25T12:15:51.316Z",
   "goalies": [
     {
       "rank": 1,
       "name": "Alexa Gibson",
       "team": "Auckland Steel",
-      "gp": "4",
-      "w": "4",
+      "gp": "5",
+      "w": "5",
       "l": "0",
-      "gaa": "1.00",
-      "svPct": ".931",
+      "gaa": "0.99",
+      "svPct": ".939",
       "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675636&playerID=2198272&printPage=0",
       "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/AlexaGibson%2Ejpg"
     },
@@ -28,6 +28,18 @@
     },
     {
       "rank": 3,
+      "name": "Samantha Winder",
+      "team": "Dunedin Thunder Women",
+      "gp": "7",
+      "w": "3",
+      "l": "1",
+      "gaa": "1.87",
+      "svPct": ".924",
+      "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675638&playerID=1949577&printPage=0",
+      "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/thunderW%2Epng"
+    },
+    {
+      "rank": 4,
       "name": "Jordan Wichman",
       "team": "Wakatipu Wild",
       "gp": "6",
@@ -37,18 +49,6 @@
       "svPct": ".921",
       "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675639&playerID=2037466&printPage=0",
       "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/wild%2Epng"
-    },
-    {
-      "rank": 4,
-      "name": "Samantha Winder",
-      "team": "Dunedin Thunder Women",
-      "gp": "6",
-      "w": "3",
-      "l": "1",
-      "gaa": "1.87",
-      "svPct": ".914",
-      "profileUrl": "https://www.nzwihl.com/leagues/rosters_profile.cfm?clientID=7132&leagueID=35501&teamID=675638&playerID=1949577&printPage=0",
-      "imageUrl": "https://www.nzwihl.com/media/leagues/6795/graphics/thunderW%2Epng"
     },
     {
       "rank": 5,
