@@ -1,6 +1,6 @@
 {
   "sourceUrl": "https://www.nzihl.com/leagues/stats_hockey.cfm?clientid=7131&leagueID=35499&divID=0&statType=goalie&showGameType=2&printPage=1",
-  "generatedAt": "2026-07-26T00:20:03.636Z",
+  "generatedAt": "2026-07-26T12:19:27.761Z",
   "goalies": [
     {
       "rank": 1,
@@ -88,6 +88,18 @@
     },
     {
       "rank": 8,
+      "name": "Daniel Reason",
+      "team": "Red Devils",
+      "gp": "6",
+      "w": "3",
+      "l": "3",
+      "gaa": "4.85",
+      "svPct": ".868",
+      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675633&playerID=1998206&printPage=0",
+      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/Dan%2Ejpg"
+    },
+    {
+      "rank": 9,
       "name": "Timothy Carey",
       "team": "Red Devils",
       "gp": "8",
@@ -99,7 +111,7 @@
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/TimC%2Ejpg"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "name": "James Moore",
       "team": "Dunedin Thunder",
       "gp": "8",
@@ -109,18 +121,6 @@
       "svPct": ".844",
       "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675634&playerID=2015543&printPage=0",
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/JamesEASPORT%2Epng"
-    },
-    {
-      "rank": 10,
-      "name": "Connor Parr",
-      "team": "Botany Swarm",
-      "gp": "10",
-      "w": "2",
-      "l": "7",
-      "gaa": "4.95",
-      "svPct": ".865",
-      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=674109&playerID=2067513&printPage=0",
-      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/ConnorParr1%2Ejpg"
     }
   ]
 }

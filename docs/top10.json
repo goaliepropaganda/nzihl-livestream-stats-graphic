@@ -1,9 +1,23 @@
 {
   "sourceUrl": "https://www.nzihl.com/leagues/stats_hockey.cfm?clientid=7131&leagueid=35499&printPage=1",
-  "generatedAt": "2026-07-26T00:19:56.434Z",
+  "generatedAt": "2026-07-26T12:19:19.756Z",
   "players": [
     {
       "rank": 1,
+      "name": "Alex Gagnon",
+      "position": "F",
+      "team": "Red Devils",
+      "gp": "16",
+      "g": "31",
+      "a": "16",
+      "pts": "47",
+      "pPerGame": "2.9",
+      "plusMinus": "26",
+      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675633&playerID=2470539&printPage=0",
+      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/A%5FGagnon%2Ejpg"
+    },
+    {
+      "rank": 2,
       "name": "Conner Jean",
       "position": "F",
       "team": "SkyCity Stampede",
@@ -15,20 +29,6 @@
       "plusMinus": "47",
       "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675635&playerID=2166971&printPage=0",
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/stampede%2Epng"
-    },
-    {
-      "rank": 2,
-      "name": "Alex Gagnon",
-      "position": "F",
-      "team": "Red Devils",
-      "gp": "15",
-      "g": "28",
-      "a": "14",
-      "pts": "42",
-      "pPerGame": "2.8",
-      "plusMinus": "21",
-      "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675633&playerID=2470539&printPage=0",
-      "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/A%5FGagnon%2Ejpg"
     },
     {
       "rank": 3,
@@ -77,12 +77,12 @@
       "name": "Fabian Hast",
       "position": "F",
       "team": "Red Devils",
-      "gp": "15",
+      "gp": "16",
       "g": "5",
-      "a": "29",
-      "pts": "34",
+      "a": "31",
+      "pts": "36",
       "pPerGame": "2.3",
-      "plusMinus": "23",
+      "plusMinus": "31",
       "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675633&playerID=2470536&printPage=0",
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/reddevils%2Epng"
     },
