@@ -1,6 +1,6 @@
 {
   "sourceUrl": "https://www.nzihl.com/leagues/stats_hockey.cfm?clientid=7131&leagueid=35499&printPage=1",
-  "generatedAt": "2026-07-28T00:17:39.949Z",
+  "generatedAt": "2026-07-28T12:31:27.149Z",
   "players": [
     {
       "rank": 1,
@@ -65,8 +65,8 @@
       "team": "SkyCity Stampede",
       "gp": "16",
       "g": "14",
-      "a": "23",
-      "pts": "37",
+      "a": "22",
+      "pts": "36",
       "pPerGame": "2.3",
       "plusMinus": "42",
       "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675635&playerID=2070139&printPage=0",
@@ -135,9 +135,9 @@
       "team": "SkyCity Stampede",
       "gp": "15",
       "g": "6",
-      "a": "17",
-      "pts": "23",
-      "pPerGame": "1.5",
+      "a": "18",
+      "pts": "24",
+      "pPerGame": "1.6",
       "plusMinus": "23",
       "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675635&playerID=2012888&printPage=0",
       "imageUrl": "https://www.nzihl.com/media/leagues/6795/graphics/DylanDevlinprofile%2Ejpg"
