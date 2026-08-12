@@ -1,6 +1,6 @@
 {
   "sourceUrl": "https://www.nzihl.com/leagues/stats_hockey.cfm?clientid=7131&leagueID=35499&divID=0&statType=goalie&showGameType=2&printPage=1",
-  "generatedAt": "2026-08-12T00:52:22.906Z",
+  "generatedAt": "2026-08-12T12:38:04.961Z",
   "goalies": [
     {
       "rank": 1,
@@ -116,7 +116,7 @@
       "team": "Dunedin Thunder",
       "gp": "8",
       "w": "4",
-      "l": "2",
+      "l": "4",
       "gaa": "4.93",
       "svPct": ".844",
       "profileUrl": "https://www.nzihl.com/leagues/rosters_profile.cfm?clientID=7131&leagueID=35499&teamID=675634&playerID=2015543&printPage=0",
